@@ -1,0 +1,21 @@
+1 . set up github
+2. clone the repo 
+3. make a template.py (reduce time to make directories , make all the project structure at once )
+
+4. push to github
+5. update requiremenst and install , update setup.py
+6. make loggin custom
+*Logging is a systematic way to record events, errors, and information during code execution. It’s critical for debugging, monitoring, and auditing. 
+*suppose you deploy your project in cloud there is no terminal to debug , so the logs are extracted from remote server
+
+7. utils.py update in that common.py
+why utils.py --utils.py is like a toolbox. You store small, helpful tools (functions) in one place, so the rest of your project stays clean, modular, and efficient.
+
+8. ensure that you follow best practices while writing functions
+ex = using configbox, using ensureannotations
+use these libraries to improve your code 
+
+9.
+
+
+
