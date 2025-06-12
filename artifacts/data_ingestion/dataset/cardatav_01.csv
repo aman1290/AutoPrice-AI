@@ -1,0 +1,412 @@
+make,model,year,km driven,Ownership,Transmission,Engine,fuel,loaction,reg year,reg_year_int,car_age,price
+Tata,Punch Creative Plus,2021.0,30263.0,First Owner,Manual,1199.0,Petrol,Lucknow,Jan 2022,2022.0,4.0,680000.0
+Renault,Kiger RXZ,2021.0,65476.0,First Owner,Manual,999.0,Petrol,Lucknow,Jun 2021,2021.0,4.0,562000.0
+Ford,Ecosport 1.5 TDCi Titanium BSIV,2019.0,44072.0,First Owner,Manual,1498.0,Diesel,Lucknow,Oct 2019,2019.0,6.0,672000.0
+Mercedes-Benz,E-Class Exclusive E 200 BSIV,2019.0,54000.0,First Owner,Automatic,1991.0,Petrol,New Delhi,May 2019,2019.0,6.0,3975000.0
+Honda,City V MT,2015.0,48495.0,First Owner,Manual,1497.0,Petrol,Lucknow,Oct 2015,2015.0,10.0,469000.00000000006
+Hyundai,EON D Lite,2012.0,36527.0,First Owner,Manual,814.0,Petrol,Lucknow,Jul 2012,2012.0,13.0,220000.00000000003
+Hyundai,i20 Active 1.2,2017.0,34748.0,First Owner,Manual,1197.0,Petrol,Lucknow,Feb 2017,2017.0,8.0,457000.0
+Skoda,Slavia 1.0 TSI Style,2024.0,30000.0,First Owner,Manual,999.0,Petrol,Lucknow,2024,,1.0,1350000.0
+Hyundai,Creta EX BSVI,2021.0,34000.0,First Owner,Manual,1497.0,Petrol,Lucknow,Jun 2021,2021.0,4.0,980000.0000000001
+Hyundai,Grand i10 Nios AMT Sportz,2023.0,55000.0,First Owner,Automatic,1197.0,Petrol,Lucknow,Aug 2023,2023.0,2.0,740000.0
+Hyundai,Venue SX Diesel BSVI,2022.0,28665.0,First Owner,Manual,1493.0,Diesel,Lucknow,Feb 2022,2022.0,3.0,975000.0
+Mahindra,XUV500 W4,2015.0,120000.0,First Owner,Manual,2179.0,Diesel,Lucknow,2015,,10.0,478000.0
+Maruti,Swift Dzire VXI,2013.0,19906.0,First Owner,Manual,1197.0,Petrol,Lucknow,Feb 2013,2013.0,12.0,326000.0
+Hyundai,i20 Sportz Petrol,2013.0,70611.0,First Owner,Manual,1197.0,Petrol,Lucknow,Jul 2013,2013.0,12.0,239000.0
+Maruti,Ertiga VXI,2015.0,12236.0,First Owner,Manual,1462.0,Petrol,Lucknow,Aug 2015,2015.0,10.0,508000.0
+Tata,Nexon EV XZ Plus,2021.0,40000.0,First Owner,2023,1198.0,Electric,Lucknow,2023,,4.0,1435000.0
+Maruti,Baleno 1.2 Delta,2015.0,59114.0,First Owner,Manual,1197.0,Petrol,Lucknow,Dec 2015,2015.0,10.0,425000.0
+Nissan,Magnite XE,2022.0,17465.0,First Owner,Manual,999.0,Petrol,Lucknow,Jul 2022,2022.0,3.0,480999.99999999994
+Toyota,Urban cruiser Mid,2021.0,96764.0,First Owner,Manual,1462.0,Petrol,Lucknow,Mar 2021,2021.0,4.0,578000.0
+Mercedes-Benz,E-Class E 220d,2024.0,10000.0,First Owner,Automatic,1993.0,Diesel,Lucknow,2024,,1.0,6500000.0
+Kia,Seltos HTK Plus D,2021.0,50000.0,First Owner,Manual,1493.0,Diesel,Indore,Jan 2021,2021.0,4.0,1185000.0
+Kia,Seltos HTK Plus iMT,2022.0,57094.0,First Owner,Manual,1497.0,Petrol,Indore,Jan 2023,2023.0,3.0,950000.0
+Mahindra,XUV300 W8 Option Dual Tone BSIV,2019.0,58000.0,First Owner,Manual,1197.0,Petrol,Indore,Jan 2019,2019.0,6.0,790000.0
+Skoda,Superb Elegance 1.8 TSI AT,2015.0,100000.0,First Owner,Automatic,1798.0,Petrol,Indore,2015,,10.0,900000.0
+Maruti,S-Presso VXI Opt AT 2019-2022,2022.0,7932.0,First Owner,Automatic,998.0,Petrol,Indore,Aug 2022,2022.0,3.0,437000.0
+Kia,Seltos HTX Diesel AT,2022.0,68000.0,First Owner,Automatic,1493.0,Diesel,Indore,Jan 2022,2022.0,3.0,1051000.0
+Renault,Triber RXL BSVI,2022.0,5533.0,First Owner,Manual,999.0,Petrol,Indore,Jan 2023,2023.0,3.0,488999.99999999994
+Tata,Curvv EV Accomplished 45,2021.0,30000.0,First Owner,2024,1198.0,Electric,Indore,2024,,4.0,1650000.0
+BMW,X7 xDrive40d M Sport BSVI,2023.0,14000.0,First Owner,Automatic,2993.0,Diesel,Indore,Mar 2023,2023.0,2.0,11000000.0
+Maruti,Alto 800 LXI,2021.0,42000.0,First Owner,Manual,796.0,Petrol,Indore,Jan 2021,2021.0,4.0,375000.0
+Maruti,Swift RS VDI,2014.0,85000.0,First Owner,Manual,1248.0,Diesel,Indore,Jan 2015,2015.0,11.0,400000.0
+Skoda,Rapid 1.6 MPI AT Style BSIV,2018.0,66000.0,First Owner,Automatic,1598.0,Petrol,Indore,Aug 2018,2018.0,7.0,830000.0000000001
+Hyundai,i20 Sportz 1.4 CRDi,2016.0,63000.0,First Owner,Manual,1396.0,Diesel,Indore,Dec 2016,2016.0,9.0,600000.0
+Maruti,Wagon R ZXI BSVI,2022.0,45000.0,First Owner,Manual,1197.0,Petrol,Indore,Jan 2022,2022.0,3.0,550000.0
+Hyundai,Grand i10 1.2 CRDi Era,2018.0,60000.0,First Owner,Manual,1186.0,Diesel,Indore,Jan 2018,2018.0,7.0,441000.0
+Mahindra,XUV500 W11 FWD Diesel,2018.0,60000.0,Second Owner,Manual,2179.0,Diesel,Indore,Dec 2018,2018.0,7.0,1225000.0
+Tata,Tiago 1.2 Revotron XZ,2017.0,75757.0,First Owner,Manual,1199.0,Petrol,Indore,Dec 2017,2017.0,8.0,325000.0
+Kia,Seltos HTK Plus,2023.0,27000.0,First Owner,Manual,1497.0,Petrol,Indore,May 2023,2023.0,2.0,1100000.0
+Maruti,Alto K10 LXI,2014.0,35054.0,Second Owner,Manual,998.0,Petrol,Indore,Dec 2014,2014.0,11.0,210000.0
+Kia,Sonet HTK Plus BSVI,2022.0,19010.0,First Owner,Manual,1197.0,Petrol,Indore,Aug 2022,2022.0,3.0,960000.0
+Hyundai,i20 Sportz,2024.0,30000.0,First Owner,Manual,1197.0,Petrol,Guwahati,2024,,1.0,900000.0
+Hyundai,Santro Xing GLS,2021.0,57000.0,1086 cc,2010,1198.0,Petrol,Guwahati,2010,,4.0,120000.0
+Jeep,Compass 2.0 Limited,2017.0,82000.0,Second Owner,Manual,1956.0,Diesel,Guwahati,2017,,8.0,1000000.0
+Mahindra,XUV500 W6 2WD,2014.0,80000.0,First Owner,Manual,2179.0,Diesel,Guwahati,2014,,11.0,450000.0
+Ford,Figo Petrol Titanium,2012.0,60000.0,First Owner,Manual,1196.0,Petrol,Guwahati,2012,,13.0,160000.0
+Tata,Punch Adventure,2024.0,10000.0,First Owner,Manual,1199.0,Petrol,Guwahati,2024,,1.0,800000.0
+Maruti,Baleno 1.3 Alpha,2017.0,120000.0,First Owner,Manual,1248.0,Diesel,Guwahati,2017,,8.0,490000.00000000006
+Maruti,Swift Dzire VXI 1.2 BS IV,2018.0,35000.0,First Owner,Manual,1197.0,Petrol,Guwahati,2018,,7.0,475000.0
+Jeep,Compass 2.0 Limited Opt Diesel BSVI,2022.0,18000.0,First Owner,Manual,1956.0,Diesel,Guwahati,2022,,3.0,2200000.0
+Maruti,Swift Dzire LXI 1.2,2021.0,99000.0,1197 cc,2019,1198.0,Petrol,Guwahati,2019,,4.0,490000.00000000006
+Mahindra,XUV500 W8 FWD,2014.0,50000.0,First Owner,Manual,2179.0,Diesel,Guwahati,2014,,11.0,535000.0
+Toyota,Fortuner 2.7 2WD MT BSIV,2019.0,44000.0,First Owner,Manual,2694.0,Petrol,Guwahati,2019,,6.0,2400000.0
+Hyundai,EON Era,2012.0,120000.0,First Owner,Manual,814.0,Petrol,Guwahati,2012,,13.0,180000.0
+Hyundai,i10 Magna 1.1L,2008.0,10000.0,First Owner,Manual,1086.0,Petrol,Guwahati,2008,,17.0,100000.0
+Hyundai,Creta 1.6 SX Automatic,2021.0,20000.0,1591 cc,2019,1198.0,Petrol,Guwahati,2019,,4.0,900000.0
+Renault,KWID RXL,2015.0,30000.0,Third Owner,Manual,799.0,Petrol,Guwahati,2015,,10.0,197000.0
+Hyundai,Santro Xing XL,2006.0,60000.0,Second Owner,Manual,1086.0,Petrol,Guwahati,2006,,19.0,200000.0
+Hyundai,i20 Sportz 1.4 CRDi,2013.0,70000.0,Second Owner,Manual,1396.0,Diesel,Guwahati,2013,,12.0,300000.0
+Chevrolet,Spark 1.0,2010.0,40000.0,First Owner,Manual,995.0,Petrol,Guwahati,2010,,15.0,110000.00000000001
+Honda,Jazz 1.2 VX i VTEC,2016.0,50000.0,Second Owner,Manual,1199.0,Petrol,Guwahati,2016,,9.0,390000.0
+Maruti,Ertiga CNG VXI,2021.0,32000.0,First Owner,Manual,1462.0,CNG,Patna,Dec 2021,2021.0,4.0,1050000.0
+Tata,Tiago XZ Plus,2023.0,4596.0,First Owner,Manual,1199.0,Petrol,Patna,Apr 2023,2023.0,2.0,599000.0
+Renault,KWID CLIMBER BSVI,2022.0,19446.0,First Owner,Manual,999.0,Petrol,Patna,Sept 2023,2023.0,3.0,409999.99999999994
+Hyundai,Aura SX Option,2020.0,28145.0,Second Owner,Manual,1197.0,Petrol,Patna,Feb 2020,2020.0,5.0,615000.0
+Kia,Sonet HTX Turbo DCT BSVI,2021.0,53388.0,First Owner,Automatic,998.0,Petrol,Patna,Nov 2021,2021.0,4.0,775000.0
+Mahindra,Scorpio S5,2020.0,41000.0,First Owner,Manual,2179.0,Diesel,Patna,Aug 2020,2020.0,5.0,1275000.0
+Kia,Seltos GTX Plus DCT,2019.0,28026.0,First Owner,Automatic,1353.0,Petrol,Patna,Nov 2019,2019.0,6.0,1145000.0
+Hyundai,Grand i10 Nios Asta,2019.0,30640.0,First Owner,Manual,1197.0,Petrol,Patna,Nov 2019,2019.0,6.0,508000.0
+Tata,Nexon XM,2023.0,30328.0,First Owner,Manual,1199.0,Petrol,Patna,Mar 2023,2023.0,2.0,795000.0
+Maruti,Celerio ZXI,2021.0,77031.0,First Owner,Manual,998.0,Petrol,Patna,Feb 2021,2021.0,4.0,399000.0
+Honda,Jazz VX,2021.0,27717.0,First Owner,Manual,1199.0,Petrol,Patna,Nov 2021,2021.0,4.0,558000.0
+Kia,Seltos HTK Plus iMT,2022.0,5006.0,First Owner,Manual,1497.0,Petrol,Patna,Apr 2022,2022.0,3.0,1110000.0
+Tata,Tiago XT BSVI,2021.0,20132.0,First Owner,Manual,1199.0,Petrol,Patna,Mar 2021,2021.0,4.0,501999.99999999994
+Honda,Amaze 2nd Gen S BSVI,2022.0,37829.0,Second Owner,Manual,1199.0,Petrol,Patna,Mar 2022,2022.0,3.0,604000.0
+Kia,Sonet GTX Plus Turbo DCT BSVI,2021.0,45136.0,First Owner,Automatic,998.0,Petrol,Patna,Apr 2021,2021.0,4.0,815000.0
+Mahindra,Thar LX 4WD Hard Top Diesel BSVI,2022.0,16061.0,First Owner,Manual,2184.0,Diesel,Patna,Dec 2022,2022.0,3.0,1292000.0
+Kia,Seltos GTX Plus,2021.0,70279.0,First Owner,Manual,1353.0,Petrol,Patna,Feb 2022,2022.0,4.0,1188000.0
+Maruti,Baleno Zeta,2021.0,39591.0,First Owner,Manual,1197.0,Petrol,Patna,Jan 2021,2021.0,4.0,612000.0
+Kia,Sonet HTK Plus BSVI,2020.0,30243.0,First Owner,Manual,1197.0,Petrol,Patna,Dec 2020,2020.0,5.0,638000.0
+Maruti,Baleno Delta,2022.0,12311.0,First Owner,Manual,1197.0,Petrol,Patna,Jan 2023,2023.0,3.0,675000.0
+Honda,Amaze VX Diesel,2013.0,97426.0,First Owner,Manual,1498.0,Diesel,Bhubaneswar,Sept 2013,2013.0,12.0,270000.0
+Audi,Q5 2.0 TDI,2014.0,100000.0,Second Owner,Automatic,1968.0,Diesel,Bhubaneswar,Jul 2014,2014.0,11.0,1280000.0
+Maruti,S Cross DDiS 200 Alpha,2017.0,60076.0,First Owner,Manual,1248.0,Diesel,Bhubaneswar,Nov 2017,2017.0,8.0,635000.0
+Honda,Jazz 1.5 SV i DTEC,2017.0,349183.0,First Owner,Manual,1498.0,Diesel,Bhubaneswar,Sept 2017,2017.0,8.0,380000.0
+Audi,Q5 2.0 TDI,2012.0,120000.0,Second Owner,Automatic,1968.0,Diesel,Bhubaneswar,Feb 2013,2013.0,13.0,1000000.0
+BMW,X3 xDrive20d,2012.0,152000.0,First Owner,Automatic,1995.0,Diesel,Bhubaneswar,Jan 2013,2013.0,13.0,1100000.0
+Maruti,Swift VXI BSVI,2022.0,41250.0,First Owner,Manual,1197.0,Petrol,Bhubaneswar,May 2022,2022.0,3.0,635000.0
+Hyundai,Grand i10 1.2 Kappa Sportz BSIV,2018.0,48177.0,First Owner,Manual,1197.0,Petrol,Bhubaneswar,Jan 2019,2019.0,7.0,420000.0
+BMW,6 Series GT 620d Luxury Line,2019.0,50000.0,First Owner,Automatic,1995.0,Diesel,Bhubaneswar,Jul 2019,2019.0,6.0,3800000.0
+Maruti,Vitara Brezza ZDi AMT,2017.0,69651.0,First Owner,Automatic,1248.0,Diesel,Bhubaneswar,Mar 2017,2017.0,8.0,575000.0
+Maruti,Baleno 1.2 CVT Zeta,2018.0,43966.0,First Owner,Automatic,1197.0,Petrol,Bhubaneswar,Feb 2018,2018.0,7.0,570000.0
+Honda,City CVT,2019.0,29126.0,First Owner,Automatic,1497.0,Petrol,Bhubaneswar,Apr 2019,2019.0,6.0,900000.0
+Hyundai,Tucson 2.0 e-VGT 2WD AT GLS,2016.0,610000.0,Second Owner,Automatic,1995.0,Diesel,Bhubaneswar,Mar 2017,2017.0,9.0,980000.0000000001
+Honda,City VX MT,2018.0,131539.0,First Owner,Manual,1497.0,Petrol,Bhubaneswar,Jan 2019,2019.0,7.0,670000.0
+Hyundai,Xcent 1.2 CRDi SX,2018.0,67981.0,Second Owner,Manual,1186.0,Diesel,Bhubaneswar,Apr 2019,2019.0,7.0,409999.99999999994
+Hyundai,Creta SX (O) Knight iVT,2024.0,20000.0,First Owner,Automatic,1497.0,Petrol,Bhubaneswar,2024,,1.0,1650000.0
+Honda,Jazz 1.2 V i VTEC,2015.0,62162.0,First Owner,Manual,1199.0,Petrol,Bhubaneswar,Nov 2015,2015.0,10.0,360000.0
+Renault,Duster 110PS Diesel RxZ,2018.0,45690.0,First Owner,Manual,1461.0,Diesel,Bhubaneswar,Aug 2019,2019.0,7.0,559000.0
+Maruti,Swift VDI,2019.0,48572.0,First Owner,Manual,1248.0,Diesel,Bhubaneswar,Feb 2020,2020.0,6.0,580000.0
+Tata,Nexon XZ Plus DualTone Roof (O),2022.0,20000.0,First Owner,Manual,1199.0,Petrol,Bhubaneswar,2022,,3.0,1000000.0
+Maruti,Celerio VXI,2022.0,36494.0,First Owner,Manual,998.0,Petrol,Nagpur,Oct 2022,2022.0,3.0,515000.00000000006
+Honda,City i VTEC V,2016.0,51288.0,First Owner,Manual,1497.0,Petrol,Nagpur,Mar 2016,2016.0,9.0,545000.0
+Renault,Kiger RXL,2021.0,49000.0,First Owner,Manual,999.0,Petrol,Nagpur,Sept 2021,2021.0,4.0,610000.0
+Hyundai,Verna 1.6 SX,2014.0,91000.0,First Owner,Manual,1582.0,Diesel,Nagpur,Feb 2015,2015.0,11.0,540000.0
+BMW,X1 sDrive 20d xLine,2017.0,99875.0,First Owner,Automatic,1995.0,Diesel,Nagpur,Sept 2017,2017.0,8.0,1599000.0
+Hyundai,Venue SX,2023.0,28511.0,First Owner,Manual,1197.0,Petrol,Nagpur,Apr 2023,2023.0,2.0,1019999.9999999999
+Hyundai,Grand i10 1.2 Kappa Sportz Option AT,2018.0,75394.0,First Owner,Automatic,1197.0,Petrol,Nagpur,Sept 2018,2018.0,7.0,494000.00000000006
+Maruti,Celerio X VXI Option BSIV,2018.0,52000.0,First Owner,Manual,998.0,Petrol,Nagpur,Sept 2019,2019.0,7.0,409999.99999999994
+Maruti,S-Presso VXI Plus 2019-2022,2021.0,29952.0,First Owner,Manual,998.0,Petrol,Nagpur,May 2021,2021.0,4.0,449000.0
+Hyundai,Creta 1.4 CRDi S Plus,2016.0,80611.0,First Owner,Manual,1396.0,Diesel,Nagpur,Feb 2016,2016.0,9.0,849000.0
+Maruti,S-Presso VXi Plus Opt AT,2023.0,4547.0,First Owner,Automatic,998.0,Petrol,Nagpur,Nov 2023,2023.0,2.0,480000.0
+Mahindra,XUV300 W6 Sunroof BSVI,2022.0,42000.0,First Owner,Manual,1197.0,Petrol,Nagpur,Feb 2022,2022.0,3.0,825000.0
+Maruti,Celerio ZXI AMT,2024.0,12955.0,First Owner,Automatic,998.0,Petrol,Nagpur,Jun 2024,2024.0,1.0,649000.0
+Maruti,Baleno 1.2 Zeta,2017.0,85856.0,First Owner,Manual,1197.0,Petrol,Nagpur,Jun 2017,2017.0,8.0,494000.00000000006
+BMW,3 Series 320d Highline,2009.0,96659.0,Third Owner,Automatic,1995.0,Diesel,Nagpur,Jul 2009,2009.0,16.0,550000.0
+Maruti,Ciaz VXi,2014.0,95000.0,Second Owner,Manual,1373.0,Petrol,Nagpur,Dec 2014,2014.0,11.0,450000.0
+Maruti,Alto 800 LXI,2016.0,36515.0,First Owner,Manual,796.0,Petrol,Nagpur,May 2016,2016.0,9.0,295000.0
+Hyundai,Aura S,2023.0,9412.0,First Owner,Manual,1197.0,Petrol,Nagpur,May 2023,2023.0,2.0,669000.0
+Skoda,Fabia 1.2 MPI Classic,2011.0,81000.0,Second Owner,Manual,1198.0,Petrol,Nagpur,Nov 2011,2011.0,14.0,170000.0
+Chevrolet,Spark 1.0 LS LPG,2012.0,60000.0,First Owner,Manual,995.0,LPG,Nagpur,2012,,13.0,125000.0
+Maruti,Alto 800 LXI Opt BSVI,2022.0,2565.0,Second Owner,Manual,796.0,Petrol,Surat,Oct 2022,2022.0,3.0,360000.0
+MG,Hector Sharp DCT,2019.0,56383.0,First Owner,Automatic,1451.0,Petrol,Surat,Dec 2019,2019.0,6.0,1005000.0000000001
+Skoda,Kushaq 1.0 TSI Style 4 Airbags AT,2022.0,25200.0,First Owner,Automatic,999.0,Petrol,Surat,Apr 2023,2023.0,3.0,1242000.0
+Mercedes-Benz,E-Class E250 CDI,2014.0,108000.0,First Owner,Automatic,2143.0,Diesel,Surat,2014,,11.0,1200000.0
+Maruti,Swift VXI,2018.0,23131.0,First Owner,Manual,1197.0,Petrol,Surat,Nov 2018,2018.0,7.0,480000.0
+Nissan,Micra XV CVT,2017.0,25099.0,Second Owner,Automatic,1198.0,Petrol,Surat,Aug 2017,2017.0,8.0,394000.0
+Hyundai,Creta SX,2023.0,14836.0,First Owner,Manual,1497.0,Petrol,Surat,Jul 2023,2023.0,2.0,1230000.0
+Maruti,Vitara Brezza VDi Option,2018.0,82000.0,Second Owner,Manual,1248.0,Diesel,Surat,Feb 2018,2018.0,7.0,565000.0
+Hyundai,Grand i10 Nios Sportz CNG,2020.0,69500.0,First Owner,Manual,1197.0,CNG,Surat,Jan 2021,2021.0,5.0,641000.0
+Skoda,Slavia 1.5 TSI Style DSG,2021.0,,2024,Manual,1198.0,5 Seats,Surat,Comprehensive,,4.0,1951000.0000000002
+Mahindra,Thar LX 4WD Hard Top AT BSVI,2021.0,48493.0,First Owner,Automatic,1997.0,Petrol,Surat,Oct 2021,2021.0,4.0,919999.9999999999
+Honda,WR-V i-VTEC S,2019.0,60000.0,Second Owner,Manual,1199.0,Petrol,Surat,2019,,6.0,711000.0
+Jeep,Compass 2.0 Limited,2018.0,97228.0,First Owner,Manual,1956.0,Diesel,Surat,Sept 2018,2018.0,7.0,781000.0
+Maruti,Alto 800 LXI,2017.0,57138.0,First Owner,Manual,796.0,Petrol,Surat,Nov 2017,2017.0,8.0,254999.99999999997
+Ford,Ecosport 1.5 Petrol Titanium BSIV,2019.0,68895.0,First Owner,Manual,1497.0,Petrol,Surat,Oct 2019,2019.0,6.0,648000.0
+Mahindra,Thar LX 4WD Convert Top Diesel AT BSVI,2023.0,40000.0,First Owner,Automatic,2184.0,Diesel,Surat,2023,,2.0,1445000.0
+Maruti,Wagon R VXI BS IV,2018.0,31014.0,First Owner,Manual,998.0,Petrol,Surat,Nov 2018,2018.0,7.0,356000.0
+Kia,Seltos HTK Plus iMT,2022.0,18182.0,First Owner,Manual,1497.0,Petrol,Surat,Jun 2022,2022.0,3.0,994999.9999999999
+Honda,Amaze 2nd Gen VX CVT,2023.0,38760.0,First Owner,Automatic,1199.0,Petrol,Surat,Jun 2023,2023.0,2.0,798000.0
+Maruti,Ciaz VXi,2015.0,90000.0,First Owner,Manual,1373.0,Petrol,Surat,2015,,10.0,425000.0
+Mahindra,Thar LX 4-Str Hard Top AT RWD BSVI,2022.0,32233.0,First Owner,Automatic,1997.0,Petrol,Coimbatore,Apr 2022,2022.0,3.0,1370000.0
+Renault,KWID 1.0 RXT Optional AT 2016-2019,2018.0,21431.0,Second Owner,Automatic,999.0,Petrol,Coimbatore,Dec 2018,2018.0,7.0,353000.0
+Hyundai,i20 Sportz IVT BSVI,2022.0,14395.0,First Owner,Automatic,1197.0,Petrol,Coimbatore,Jun 2022,2022.0,3.0,890000.0
+Renault,Triber RXZ,2024.0,11486.0,First Owner,Manual,999.0,Petrol,Coimbatore,Apr 2024,2024.0,1.0,844999.9999999999
+Hyundai,Tucson Signature AT DT,2023.0,8159.0,First Owner,Automatic,1999.0,Petrol,Coimbatore,Jun 2023,2023.0,2.0,3275000.0
+Renault,Kiger RXZ Turbo CVT,2021.0,29819.0,First Owner,Automatic,999.0,Petrol,Coimbatore,Sept 2021,2021.0,4.0,794000.0
+Mercedes-Benz,EQS 580 4Matic,2021.0,12000.0,First Owner,2022,1198.0,Electric,Coimbatore,Oct 2022,2022.0,4.0,8500000.0
+BMW,X7 xDrive40i M Sport,2023.0,50956.0,First Owner,Automatic,2998.0,Petrol,Coimbatore,Mar 2023,2023.0,2.0,10500000.0
+Nissan,Magnite Turbo CVT XV,2023.0,49873.0,First Owner,Automatic,999.0,Petrol,Coimbatore,Jan 2023,2023.0,2.0,757000.0
+Maruti,Swift VXI,2017.0,24285.0,Second Owner,Manual,1197.0,Petrol,Coimbatore,May 2017,2017.0,8.0,468000.0
+Renault,Kiger RXZ Turbo,2021.0,48342.0,Second Owner,Manual,999.0,Petrol,Coimbatore,Mar 2021,2021.0,4.0,595000.0
+BMW,X1 sDrive18d M Sport,2023.0,34000.0,First Owner,Automatic,1995.0,Diesel,Coimbatore,May 2023,2023.0,2.0,4900000.0
+Maruti,Wagon R VXI 1.2,2022.0,6808.0,First Owner,Manual,1197.0,Petrol,Coimbatore,May 2022,2022.0,3.0,537000.0
+Renault,Triber RXZ,2021.0,12296.0,First Owner,Manual,999.0,Petrol,Coimbatore,Sept 2021,2021.0,4.0,620000.0
+Toyota,Hyryder V HYBRID,2023.0,32564.0,First Owner,Automatic,1490.0,Petrol,Coimbatore,Apr 2023,2023.0,2.0,1889999.9999999998
+Volkswagen,Tiguan 2.0 TDI Highline,2018.0,100000.0,First Owner,Automatic,1968.0,Diesel,Coimbatore,2018,,7.0,1750000.0
+BMW,XM xDrive,2024.0,13734.0,First Owner,Automatic,4395.0,Petrol,Coimbatore,Feb 2024,2024.0,1.0,21000000.0
+Land,Rover Range Rover Velar Dynamic HSE Diesel,2023.0,26000.0,First Owner,Automatic,1997.0,Diesel,Coimbatore,Apr 2024,2024.0,2.0,7500000.0
+BMW,3 Series Long Wheelbase 320Ld M Sport GL,2023.0,1800.0,First Owner,Automatic,1995.0,Diesel,Coimbatore,Feb 2024,2024.0,2.0,6500000.0
+Audi,A4 Technology BSVI,2022.0,40000.0,First Owner,Automatic,1998.0,Petrol,Coimbatore,2022,,3.0,3800000.0
+Honda,City i VTEC V,2016.0,93252.0,First Owner,Manual,1497.0,Petrol,Kochi,Jan 2017,2017.0,9.0,557000.0
+Honda,Jazz 1.2 SV i VTEC,2018.0,54165.0,First Owner,Manual,1199.0,Petrol,Kochi,Apr 2018,2018.0,7.0,499000.0
+Renault,KWID RXT,2017.0,17049.0,Second Owner,Manual,799.0,Petrol,Kochi,Sept 2017,2017.0,8.0,278000.0
+Toyota,Fortuner 2.8 2WD AT BSIV,2019.0,40000.0,First Owner,Automatic,2755.0,Diesel,New Delhi,Jul 2019,2019.0,6.0,2825000.0
+Maruti,Wagon R VXI 1.2,2022.0,29243.0,First Owner,Manual,1197.0,Petrol,Kochi,Jun 2022,2022.0,3.0,497000.0
+Maruti,Ritz VXI,2013.0,42500.0,First Owner,Manual,1197.0,Petrol,Kochi,Mar 2013,2013.0,12.0,260000.0
+Maruti,S-Presso VXI,2024.0,8519.0,First Owner,Manual,998.0,Petrol,Kochi,Feb 2024,2024.0,1.0,442000.0
+MG,Hector Sharp DCT,2021.0,65000.0,First Owner,Automatic,1451.0,Petrol,New Delhi,Jul 2021,2021.0,4.0,1190000.0
+Renault,Triber RXT EASY-R AMT BSVI,2020.0,28315.0,First Owner,Automatic,999.0,Petrol,Kochi,Mar 2021,2021.0,5.0,497000.0
+Maruti,Celerio ZXI AMT,2023.0,26746.0,First Owner,Automatic,998.0,Petrol,Kochi,Sept 2023,2023.0,2.0,515000.00000000006
+Kia,Seltos HTE Diesel iMT,2023.0,36398.0,First Owner,Automatic,1493.0,Diesel,Kochi,Jul 2023,2023.0,2.0,1190000.0
+Mercedes-Benz,CLA 200 CGI Sport,2018.0,42000.0,First Owner,Automatic,1991.0,Petrol,New Delhi,Jul 2018,2018.0,7.0,2250000.0
+Honda,Amaze 2nd Gen S,2017.0,56807.0,First Owner,Manual,1199.0,Petrol,Kochi,Jan 2018,2018.0,8.0,474000.0
+Hyundai,Grand i10 1.2 Kappa Sportz BSIV,2022.0,21590.0,First Owner,Manual,1197.0,Petrol,Kochi,May 2022,2022.0,3.0,612000.0
+Nissan,Magnite XE,2021.0,18783.0,First Owner,Manual,999.0,Petrol,Kochi,Sept 2021,2021.0,4.0,476999.99999999994
+Land,Rover Discovery Sport SD4 HSE Luxury 7S,2016.0,76000.0,Second Owner,Automatic,2179.0,Diesel,New Delhi,Jul 2016,2016.0,9.0,1895000.0
+Maruti,Celerio VXI AMT,2015.0,60316.0,First Owner,Automatic,998.0,Petrol,Kochi,Jul 2015,2015.0,10.0,368000.0
+Hyundai,Venue SX Opt Turbo DCT,2023.0,5432.0,First Owner,Automatic,998.0,Petrol,Kochi,Feb 2024,2024.0,2.0,1166000.0
+Nissan,Magnite XE BSVI,2022.0,10647.0,First Owner,Manual,999.0,Petrol,Kochi,Sept 2022,2022.0,3.0,529000.0
+Ford,Endeavour Titanium Plus 4X2,2020.0,55000.0,First Owner,Automatic,2198.0,Diesel,New Delhi,Jul 2020,2020.0,5.0,2895000.0
+Tata,Punch Adventure CNG,2023.0,32125.0,First Owner,Manual,1199.0,CNG,Jaipur,Sept 2023,2023.0,2.0,737000.0
+Kia,Seltos HTK Plus iMT,2021.0,21903.0,First Owner,Manual,1497.0,Petrol,Jaipur,Jan 2022,2022.0,4.0,1080000.0
+Renault,KWID 1.0 AMT RXT,2022.0,30864.0,Second Owner,Automatic,999.0,Petrol,Jaipur,Aug 2022,2022.0,3.0,413999.99999999994
+Volkswagen,Vento 1.5 TDI Highline Plus,2017.0,100000.0,Second Owner,Manual,1498.0,Diesel,Jaipur,2017,,8.0,623000.0
+Kia,Seltos HTX IVT,2021.0,93360.0,First Owner,Automatic,1497.0,Petrol,Jaipur,Jun 2021,2021.0,4.0,1035000.0
+Toyota,Glanza V,2021.0,41445.0,First Owner,Manual,1197.0,Petrol,Jaipur,Jan 2022,2022.0,4.0,694000.0
+Honda,Amaze S i-Vtech,2015.0,44859.0,Second Owner,Manual,1198.0,Petrol,Jaipur,Oct 2015,2015.0,10.0,367000.0
+BMW,X6 xDrive 40d,2013.0,76000.0,Second Owner,Automatic,4395.0,Petrol,Jaipur,2013,,12.0,1800000.0
+Maruti,Wagon R VXI 1.2,2022.0,17293.0,First Owner,Manual,1197.0,Petrol,Jaipur,Jun 2022,2022.0,3.0,554000.0
+Nissan,Magnite XE BSVI,2021.0,15002.0,Second Owner,Manual,999.0,Petrol,Jaipur,Aug 2021,2021.0,4.0,455000.0
+Mercedes-Benz,GLC 300,2024.0,4800.0,First Owner,Automatic,1999.0,Petrol,Jaipur,Jan 2025,2025.0,1.0,7400000.0
+Honda,CR-V 2.4L 4WD MT,2008.0,160000.0,First Owner,Manual,2354.0,Petrol,Jaipur,2008,,17.0,280000.0
+BMW,X5 xDrive40i M Sport,2024.0,5500.0,First Owner,Automatic,2998.0,Petrol,Jaipur,Oct 2024,2024.0,1.0,10300000.0
+Renault,Kiger RXE,2022.0,18000.0,First Owner,Manual,999.0,Petrol,Jaipur,Jul 2022,2022.0,3.0,748000.0
+Maruti,Alto K10 VXI,2023.0,15058.0,First Owner,Manual,998.0,Petrol,Jaipur,May 2023,2023.0,2.0,434999.99999999994
+MG,Astor Smart Turbo AT,2023.0,30000.0,First Owner,Automatic,1349.0,Petrol,Jaipur,2023,,2.0,1350000.0
+Nissan,Magnite XL BSVI,2022.0,17578.0,First Owner,Manual,999.0,Petrol,Jaipur,Feb 2023,2023.0,3.0,535000.0
+Nissan,Magnite XV BSVI,2022.0,10644.0,First Owner,Manual,999.0,Petrol,Jaipur,Dec 2022,2022.0,3.0,577000.0
+Nissan,Magnite XL,2023.0,23649.0,First Owner,Manual,999.0,Petrol,Jaipur,Feb 2024,2024.0,2.0,578000.0
+Mercedes-Benz,GLC 200,2022.0,21000.0,First Owner,Automatic,1991.0,Petrol,Jaipur,Feb 2022,2022.0,3.0,5500000.0
+Tata,Altroz XZ Diesel,2021.0,73214.0,First Owner,Manual,1497.0,Diesel,Chandigarh,Feb 2021,2021.0,4.0,635000.0
+Renault,Triber RXT,2021.0,41177.0,Second Owner,Manual,999.0,Petrol,Chandigarh,Mar 2021,2021.0,4.0,499000.0
+Volvo,XC90 D5 R-Design,2018.0,117000.0,First Owner,Automatic,1969.0,Diesel,Chandigarh,Feb 2020,2020.0,7.0,3250000.0
+Maruti,Ertiga SHVS VDI,2016.0,89319.0,First Owner,Manual,1248.0,Diesel,Chandigarh,May 2016,2016.0,9.0,560000.0
+Volkswagen,Polo GT TSI,2016.0,99000.0,Second Owner,Automatic,1197.0,Petrol,Chandigarh,Jun 2016,2016.0,9.0,565000.0
+Ford,Ecosport 1.5 TDCi Trend BSIV,2016.0,70000.0,Second Owner,Manual,1498.0,Diesel,Chandigarh,Dec 2016,2016.0,9.0,430000.0
+Kia,Seltos HTK Diesel,2022.0,22767.0,First Owner,Manual,1493.0,Diesel,Chandigarh,Jan 2023,2023.0,3.0,1010000.0
+Tata,Nexon XZ Plus Dark Edition,2023.0,36483.0,First Owner,Manual,1199.0,Petrol,Chandigarh,Jul 2023,2023.0,2.0,865000.0
+Hyundai,Aura S,2021.0,40746.0,First Owner,Manual,1197.0,Petrol,Chandigarh,Dec 2021,2021.0,4.0,545000.0
+Tata,Nexon XZ Plus Dark Edition Diesel,2023.0,19346.0,First Owner,Manual,1497.0,Diesel,Chandigarh,Dec 2023,2023.0,2.0,874000.0
+Audi,A6 3.0 TFSI quattro,2005.0,65400.0,Third Owner,Automatic,2995.0,Petrol,Chandigarh,Apr 2006,2006.0,20.0,700000.0
+Hyundai,i10 Asta,2012.0,85000.0,Second Owner,Manual,1197.0,Petrol,Chandigarh,Aug 2012,2012.0,13.0,265000.0
+Renault,KWID 1.0 RXT Opt,2021.0,32548.0,First Owner,Manual,999.0,Petrol,Chandigarh,Mar 2021,2021.0,4.0,380000.0
+Audi,RS Q8 4.0 TFSI Quattro BSVI,2021.0,14000.0,First Owner,Automatic,3998.0,Petrol,Chandigarh,Jul 2021,2021.0,4.0,16500000.0
+Toyota,Glanza S,2023.0,10633.0,First Owner,Manual,1197.0,Petrol,Chandigarh,Mar 2023,2023.0,2.0,685000.0
+Mercedes-Benz,E-Class E 350 d BSIV,2017.0,100000.0,Second Owner,Automatic,2987.0,Diesel,Chandigarh,2017,,8.0,2300000.0
+Ford,Ecosport 1.5 Ti VCT AT Titanium BSIV,2016.0,65000.0,First Owner,Automatic,1499.0,Petrol,Noida,May 2016,2016.0,9.0,465000.00000000006
+Maruti,Vitara Brezza VDi AMT,2018.0,93575.0,First Owner,Automatic,1248.0,Diesel,Noida,Jul 2018,2018.0,7.0,516000.0
+BMW,5 Series 520d Sport Line,2017.0,45000.0,First Owner,Automatic,1995.0,Diesel,Noida,Apr 2018,2018.0,8.0,2650000.0
+Maruti,Wagon R LXI,2012.0,119662.0,First Owner,Manual,998.0,Petrol,Noida,Nov 2012,2012.0,13.0,125000.0
+Hyundai,Grand i10 1.2 Kappa Sportz BSIV,2021.0,40734.0,First Owner,Manual,1197.0,Petrol,Noida,Aug 2021,2021.0,4.0,554000.0
+Renault,Kiger RXZ,2022.0,32500.0,First Owner,Manual,999.0,Petrol,Noida,Feb 2023,2023.0,3.0,695000.0
+Toyota,Fortuner 2.5 4x2 MT TRD Sportivo,2015.0,120000.0,First Owner,Manual,2494.0,Diesel,Noida,2015,,10.0,1090000.0
+Honda,City i VTEC CVT VX,2020.0,40134.0,First Owner,Automatic,1497.0,Petrol,Noida,Dec 2020,2020.0,5.0,900000.0
+Kia,Seltos GTX,2020.0,54000.0,First Owner,Manual,1353.0,Petrol,Noida,Jan 2021,2021.0,5.0,999000.0
+MG,Astor Sharp CVT BSVI,2022.0,31000.0,First Owner,Automatic,1498.0,Petrol,Noida,Jan 2022,2022.0,3.0,1325000.0
+MG,Astor Savvy CVT BSVI,2022.0,70000.0,First Owner,Automatic,1498.0,Petrol,Noida,2022,,3.0,1100000.0
+Nissan,Magnite Turbo CVT XV BSVI,2022.0,59330.0,First Owner,Automatic,999.0,Petrol,Noida,Jan 2022,2022.0,3.0,643000.0
+Ford,Ecosport 1.5 Ti VCT MT Trend BSIV,2016.0,58607.0,First Owner,Manual,1499.0,Petrol,Noida,Feb 2017,2017.0,9.0,420000.0
+Renault,KWID 1.0 AMT RXT,2016.0,33160.0,First Owner,Automatic,999.0,Petrol,Noida,Feb 2017,2017.0,9.0,268000.0
+Skoda,Octavia Elegance 1.8 TSI AT,2014.0,120000.0,Second Owner,Automatic,1798.0,Petrol,Noida,2014,,11.0,500000.0
+Maruti,Wagon R VXI BS IV,2011.0,48000.0,First Owner,Manual,998.0,Petrol,Noida,Jul 2011,2011.0,14.0,175000.0
+Renault,KWID 1.0 RXT Optional AT 2016-2019,2018.0,26856.0,First Owner,Automatic,999.0,Petrol,Noida,Jul 2018,2018.0,7.0,330000.0
+Maruti,Brezza Vxi AT,2022.0,5158.0,First Owner,Automatic,1462.0,Petrol,Noida,Dec 2022,2022.0,3.0,1000000.0
+Hyundai,i20 Sportz IVT BSVI,2021.0,60000.0,First Owner,Automatic,1197.0,Petrol,Noida,Apr 2021,2021.0,4.0,747000.0
+Mercedes-Benz,GLC 300,2024.0,6295.0,First Owner,Automatic,1999.0,Petrol,Gurgaon,Jan 2024,2024.0,1.0,7000000.0
+Tata,Punch Adventure BSVI,2022.0,45715.0,First Owner,Manual,1199.0,Petrol,Gurgaon,Oct 2022,2022.0,3.0,585000.0
+Audi,Q5 Technology,2021.0,,2024,Manual,1198.0,5 Seats,Gurgaon,Expired,,4.0,5390000.0
+Porsche,Cayenne S,2010.0,70000.0,Second Owner,Manual,4806.0,Petrol,Gurgaon,2010,,15.0,2300000.0
+Hyundai,i10 Magna 1.1L,2014.0,53279.0,First Owner,Manual,1086.0,Petrol,Gurgaon,Nov 2014,2014.0,11.0,229999.99999999997
+Maruti,Celerio VXI CNG,2022.0,64584.0,First Owner,Manual,998.0,CNG,Gurgaon,Mar 2022,2022.0,3.0,497000.0
+Renault,Kiger RXT,2022.0,9415.0,First Owner,Manual,999.0,Petrol,Gurgaon,Nov 2022,2022.0,3.0,620000.0
+Honda,City i-VTEC CVT VX,2017.0,63000.0,Second Owner,Automatic,1497.0,Petrol,Gurgaon,2017,,8.0,610000.0
+Kia,Seltos HTK Plus iMT,2022.0,32698.0,First Owner,Manual,1497.0,Petrol,Gurgaon,Mar 2023,2023.0,3.0,1098000.0
+Renault,KWID 1.0 RXT Opt,2018.0,24690.0,First Owner,Manual,999.0,Petrol,Gurgaon,Apr 2018,2018.0,7.0,349000.0
+Maruti,FRONX Zeta Turbo,2024.0,3665.0,First Owner,Manual,998.0,Petrol,Gurgaon,Dec 2024,2024.0,1.0,980000.0000000001
+Maruti,Vitara Brezza ZDi Plus Dual Tone,2017.0,60000.0,First Owner,Manual,1248.0,Diesel,Gurgaon,2017,,8.0,550000.0
+Maruti,Brezza Zxi Plus AT,2023.0,7700.0,First Owner,Automatic,1462.0,Petrol,Gurgaon,Oct 2023,2023.0,2.0,1325000.0
+Kia,Sonet X-Line Turbo DCT,2022.0,9408.0,First Owner,Automatic,998.0,Petrol,Gurgaon,Nov 2022,2022.0,3.0,1180000.0
+Nissan,Magnite XV,2023.0,23334.0,First Owner,Manual,999.0,Petrol,Gurgaon,Sept 2023,2023.0,2.0,644000.0
+Tata,Zest Revotron 1.2 XT,2014.0,45000.0,First Owner,Manual,1193.0,Petrol,Gurgaon,2014,,11.0,254999.99999999997
+Renault,Kiger RXT,2023.0,24121.0,First Owner,Manual,999.0,Petrol,Gurgaon,Sept 2023,2023.0,2.0,650000.0
+BMW,X7 xDrive40d M Sport,2024.0,8400.0,First Owner,Automatic,2993.0,Diesel,Gurgaon,Aug 2024,2024.0,1.0,12800000.0
+Maruti,Alto K10 VXI Plus,2024.0,16000.0,First Owner,Manual,998.0,Petrol,Gurgaon,Nov 2024,2024.0,1.0,540000.0
+Mahindra,XUV500 W7 BSIV,2018.0,38539.0,First Owner,Manual,2179.0,Diesel,Gurgaon,2018,,7.0,844999.9999999999
+Kia,Seltos HTX G,2022.0,29775.0,First Owner,Manual,1497.0,Petrol,Pune,Apr 2023,2023.0,3.0,1278000.0
+Maruti,Wagon R ZXI Plus Dual Tone,2023.0,14629.0,First Owner,Manual,1197.0,Petrol,Pune,Jul 2023,2023.0,2.0,638000.0
+Renault,KWID 1.0 RXT Opt,2021.0,39582.0,First Owner,Manual,999.0,Petrol,Pune,Jul 2021,2021.0,4.0,362000.0
+Maruti,S Cross Alpha DDiS 200 SH,2019.0,97000.0,First Owner,Manual,1248.0,Diesel,Pune,Nov 2019,2019.0,6.0,840000.0
+Maruti,Alto K10 VXI Plus,2023.0,17473.0,First Owner,Manual,998.0,Petrol,Pune,Oct 2023,2023.0,2.0,455999.99999999994
+Maruti,Wagon R VXI 1.2,2012.0,32495.0,First Owner,Manual,1197.0,Petrol,Pune,Oct 2012,2012.0,13.0,271000.0
+Maruti,Alto K10 VXI S-CNG,2023.0,13852.0,First Owner,Manual,998.0,CNG,Pune,Aug 2023,2023.0,2.0,528000.0
+Honda,City i-VTEC VX,2021.0,76000.0,1497 cc,2017,1198.0,Petrol,Pune,2017,,4.0,651000.0
+Kia,Sonet GTX Plus Turbo iMT,2022.0,28765.0,First Owner,Automatic,998.0,Petrol,Pune,Sept 2022,2022.0,3.0,1175000.0
+Maruti,Alto K10 VXI,2018.0,30835.0,First Owner,Manual,998.0,Petrol,Pune,Aug 2018,2018.0,7.0,352000.0
+Volkswagen,Taigun 1.0 Topline AT,2021.0,,2024,Manual,1198.0,5 Seats,Pune,Expired,,4.0,1850000.0
+Skoda,Kodiaq 2.0 TDI Style,2018.0,71000.0,First Owner,Automatic,1968.0,Diesel,Pune,Mar 2018,2018.0,7.0,2250000.0
+Tata,Punch Accomplished,2023.0,26273.0,First Owner,Manual,1199.0,Petrol,Pune,Mar 2023,2023.0,2.0,767000.0
+Maruti,Swift VXI,2016.0,33437.0,First Owner,Manual,1197.0,Petrol,Pune,Apr 2016,2016.0,9.0,447000.0
+Hyundai,i20 Sportz Petrol,2012.0,45655.0,Second Owner,Manual,1197.0,Petrol,Pune,Aug 2012,2012.0,13.0,250999.99999999997
+Kia,Sonet 1.5 GTX Plus Diesel DT,2021.0,60000.0,1493 cc,2020,1198.0,Diesel,Pune,2020,,4.0,1032000.0
+Renault,KWID RXT,2016.0,9870.0,Second Owner,Manual,799.0,Petrol,Pune,Jun 2016,2016.0,9.0,274000.0
+Maruti,Alto K10 VXI,2014.0,25558.0,Second Owner,Manual,998.0,Petrol,Pune,Jun 2014,2014.0,11.0,225000.0
+Tata,Punch Accomplished Dazzle,2023.0,22056.0,First Owner,Manual,1199.0,Petrol,Pune,May 2023,2023.0,2.0,750000.0
+Maruti,Ertiga ZXI,2013.0,62000.0,Second Owner,Manual,1373.0,Petrol,Pune,Mar 2013,2013.0,12.0,445000.0
+Maruti,Swift VXI,2016.0,47005.0,First Owner,Manual,1197.0,Petrol,Kolkata,Nov 2016,2016.0,9.0,371000.0
+Hyundai,Exter SX Opt Connect,2023.0,12000.0,First Owner,Manual,1197.0,Petrol,Kolkata,Jul 2023,2023.0,2.0,815000.0
+Maruti,Alto K10 2010-2014 VXI,2013.0,22000.0,First Owner,Manual,998.0,Petrol,Kolkata,May 2013,2013.0,12.0,190000.0
+Toyota,Fortuner 4x2 Manual,2015.0,65000.0,First Owner,Manual,2982.0,Diesel,Kolkata,Nov 2015,2015.0,10.0,1350000.0
+Hyundai,Creta 1.6 EX Petrol,2022.0,7795.0,First Owner,Manual,1591.0,Petrol,Kolkata,Jul 2022,2022.0,3.0,997000.0000000001
+Hyundai,Grand i10 Sportz,2016.0,39000.0,First Owner,Manual,1197.0,Petrol,Kolkata,Jul 2016,2016.0,9.0,321000.0
+MG,Hector 1.5 Turbo Savvy Pro CVT BSVI,2023.0,6756.0,First Owner,Automatic,1451.0,Petrol,Kolkata,Jul 2023,2023.0,2.0,1795000.0
+Skoda,Octavia 1.8 TSI AT L K,2018.0,94197.0,First Owner,Automatic,1798.0,Petrol,Kolkata,Mar 2018,2018.0,7.0,1180000.0
+Land,Rover Range Rover Velar Dynamic HSE Diesel,2025.0,990.0,First Owner,Automatic,1997.0,Diesel,Kolkata,Apr 2025,2025.0,0.0,8500000.0
+Kia,Seltos HTX Plus Diesel iMT,2023.0,17000.0,First Owner,Automatic,1497.0,Diesel,Kolkata,Aug 2023,2023.0,2.0,1550000.0
+Renault,Triber RXT BSIV,2020.0,42000.0,Fourth Owner,Manual,999.0,Petrol,Kolkata,Sept 2020,2020.0,5.0,400000.0
+Kia,Seltos GTX Plus,2021.0,60000.0,Second Owner,Manual,1353.0,Petrol,Kolkata,Feb 2021,2021.0,4.0,1100000.0
+Kia,Seltos GTX Plus Diesel AT,2022.0,48400.0,First Owner,Automatic,1493.0,Diesel,Kolkata,Feb 2022,2022.0,3.0,1249000.0
+Hyundai,Exter SX Opt Connect,2023.0,20000.0,First Owner,Manual,1197.0,Petrol,Kolkata,Jul 2023,2023.0,2.0,799000.0
+Hyundai,Creta EX,2023.0,12639.0,First Owner,Manual,1497.0,Petrol,Kolkata,Jul 2023,2023.0,2.0,1011999.9999999999
+Maruti,Swift AMT VXI,2018.0,40000.0,First Owner,Automatic,1197.0,Petrol,Kolkata,Nov 2018,2018.0,7.0,475000.0
+Renault,Kiger RXZ,2021.0,18500.0,Second Owner,Manual,999.0,Petrol,Kolkata,Jun 2021,2021.0,4.0,545000.0
+Renault,Kiger RXT Opt,2023.0,23000.0,First Owner,Manual,999.0,Petrol,Kolkata,Sept 2023,2023.0,2.0,595000.0
+Renault,Kiger RXT Opt,2023.0,29000.0,First Owner,Manual,999.0,Petrol,Kolkata,Jan 2023,2023.0,2.0,595000.0
+Kia,Seltos HTX IVT G,2022.0,36000.0,First Owner,Automatic,1497.0,Petrol,Kolkata,Sept 2022,2022.0,3.0,1195000.0
+Maruti,Jimny Zeta,2023.0,29373.0,First Owner,Manual,1462.0,Petrol,Hyderabad,Mar 2024,2024.0,2.0,1080000.0
+Maruti,Wagon R VXI 1.2,2023.0,4989.0,First Owner,Manual,1197.0,Petrol,Hyderabad,Dec 2023,2023.0,2.0,629000.0
+Hyundai,i20 Sportz Petrol,2011.0,90034.0,First Owner,Manual,1197.0,Petrol,Hyderabad,Nov 2011,2011.0,14.0,254000.0
+Mercedes-Benz,GL-Class 350 CDI Blue Efficiency,2013.0,148000.0,First Owner,Automatic,2987.0,Diesel,Hyderabad,Jul 2013,2013.0,12.0,2400000.0
+Hyundai,Grand i10 Nios Magna,2023.0,16630.0,First Owner,Manual,1197.0,Petrol,Hyderabad,Oct 2023,2023.0,2.0,629000.0
+Hyundai,Grand i10 1.2 Kappa Sportz BSIV,2021.0,24000.0,First Owner,Manual,1197.0,Petrol,Hyderabad,Aug 2021,2021.0,4.0,621000.0
+Renault,Kiger RXT,2022.0,39329.0,Second Owner,Manual,999.0,Petrol,Hyderabad,Jul 2022,2022.0,3.0,629000.0
+Mahindra,Thar AX Opt 4WD Hard Top Diesel BSVI,2022.0,25000.0,First Owner,Manual,2184.0,Diesel,Hyderabad,May 2022,2022.0,3.0,1595000.0
+Mercedes-Benz,AMG GLA 35 4MATIC,2022.0,22000.0,First Owner,Automatic,1991.0,Petrol,Hyderabad,Aug 2022,2022.0,3.0,4675000.0
+Maruti,Swift AMT ZXI,2017.0,60643.0,First Owner,Automatic,1197.0,Petrol,Hyderabad,Aug 2017,2017.0,8.0,525000.0
+Maruti,FRONX Zeta Turbo AT,2023.0,26876.0,First Owner,Automatic,998.0,Petrol,Hyderabad,Feb 2024,2024.0,2.0,1081000.0
+Mahindra,XUV300 W6 BSVI,2020.0,37000.0,First Owner,Manual,1197.0,Petrol,Hyderabad,2020,,5.0,646000.0
+Kia,Sonet GTX Plus Turbo iMT,2021.0,44519.0,First Owner,Automatic,998.0,Petrol,Hyderabad,Aug 2021,2021.0,4.0,972000.0000000001
+Maruti,Swift VXI,2022.0,22121.0,First Owner,Manual,1197.0,Petrol,Hyderabad,Dec 2022,2022.0,3.0,639000.0
+Maruti,Swift VXI,2019.0,29331.0,Second Owner,Manual,1197.0,Petrol,Hyderabad,Mar 2019,2019.0,6.0,512000.0
+MG,Astor Savvy CVT Red BSVI,2023.0,20000.0,First Owner,Automatic,1498.0,Petrol,Hyderabad,2023,,2.0,1500000.0
+Kia,Sonet HTX Turbo iMT,2023.0,13119.0,First Owner,Automatic,998.0,Petrol,Hyderabad,Apr 2023,2023.0,2.0,1081000.0
+Renault,Triber RXL BSIV,2020.0,64146.0,First Owner,Manual,999.0,Petrol,Hyderabad,Nov 2020,2020.0,5.0,465000.00000000006
+Maruti,Vitara Brezza ZXI Plus AT Dual Tone,2022.0,36454.0,First Owner,Automatic,1462.0,Petrol,Hyderabad,Feb 2022,2022.0,3.0,741000.0
+Hyundai,i20 N-Line N6 iMT Dual Tone BSVI,2023.0,34000.0,First Owner,Manual,998.0,Petrol,Hyderabad,2023,,2.0,819999.9999999999
+Hyundai,Verna i (Petrol),2009.0,65000.0,Third Owner,Manual,1599.0,Petrol,Mumbai,Jul 2009,2009.0,16.0,175000.0
+Kia,Seltos HTX IVT,2022.0,12853.0,First Owner,Automatic,1497.0,Petrol,Mumbai,Dec 2022,2022.0,3.0,1575000.0
+Toyota,Fortuner Legender 4x2 AT,2025.0,15000.0,First Owner,Automatic,2755.0,Diesel,Mumbai,Jan 2025,2025.0,0.0,4995000.0
+Maruti,Alto 800 LXI,2013.0,50000.0,Second Owner,Manual,796.0,Petrol,Thane,2013,,12.0,165000.0
+Kia,Seltos GTX Plus Diesel AT,2023.0,12000.0,First Owner,Automatic,1493.0,Diesel,Mumbai,Nov 2023,2023.0,2.0,2025000.0
+Toyota,Innova Hycross ZX(O) Hybrid,2024.0,15000.0,First Owner,Automatic,1987.0,Petrol,Mumbai,Aug 2024,2024.0,1.0,3650000.0
+BMW,X3 xDrive20d M Sport,2023.0,29000.0,First Owner,Automatic,1995.0,Diesel,Mumbai,Jul 2023,2023.0,2.0,5890000.0
+Hyundai,Creta 1.6 SX Automatic,2018.0,27000.0,First Owner,Automatic,1591.0,Petrol,Mumbai,2018,,7.0,925000.0
+Kia,Sonet HTK Plus Turbo DCT,2021.0,30500.0,First Owner,Automatic,998.0,Petrol,Mumbai,Feb 2021,2021.0,4.0,925000.0
+Renault,Kiger RXZ Turbo CVT,2021.0,33186.0,First Owner,Automatic,999.0,Petrol,Mumbai,Oct 2021,2021.0,4.0,691000.0
+Kia,Seltos HTK G,2022.0,37975.0,First Owner,Manual,1497.0,Petrol,Mumbai,Feb 2022,2022.0,3.0,997000.0000000001
+Kia,Sonet HTX Plus Turbo iMT DT,2020.0,43000.0,First Owner,Manual,998.0,Petrol,Mumbai,Dec 2020,2020.0,5.0,825000.0
+BMW,X1 sDrive18d M Sport BSVI,2023.0,11000.0,First Owner,Automatic,1995.0,Diesel,Mumbai,Jun 2023,2023.0,2.0,4650000.0
+Renault,Kiger RXZ,2022.0,15551.0,First Owner,Manual,999.0,Petrol,Thane,May 2022,2022.0,3.0,665000.0
+Maruti,Alto K10 VXi BSVI,2024.0,10000.0,First Owner,Manual,998.0,Petrol,Mumbai,May 2024,2024.0,1.0,484999.99999999994
+Hyundai,i20 N-Line N8 DCT Dual Tone BSVI,2021.0,31000.0,Second Owner,Automatic,998.0,Petrol,Mumbai,Dec 2021,2021.0,4.0,775000.0
+Renault,Kiger RXZ AMT,2022.0,19802.0,First Owner,Automatic,999.0,Petrol,Mumbai,Mar 2023,2023.0,3.0,791000.0
+Kia,Sonet X-line Turbo DCT,2024.0,8400.0,First Owner,Automatic,998.0,Petrol,Mumbai,Feb 2024,2024.0,1.0,1545000.0
+Kia,Sonet GTX Plus Diesel AT,2024.0,19268.0,First Owner,Automatic,1493.0,Diesel,Mumbai,Mar 2024,2024.0,1.0,1595000.0
+Toyota,Fortuner 4x2 AT,2013.0,121000.0,First Owner,Automatic,2982.0,Diesel,Mumbai,Apr 2013,2013.0,12.0,1275000.0
+Kia,Sonet HTX Turbo iMT BSVI,2021.0,44000.0,First Owner,Manual,998.0,Petrol,New Delhi,Jun 2021,2021.0,4.0,894999.9999999999
+Audi,Q3 Premium Plus BSVI,2025.0,800.0,Second Owner,Automatic,1984.0,Petrol,New Delhi,Feb 2025,2025.0,0.0,4150000.0
+Land,Rover Range Rover 3.0 l LWB Autobiography PHEV,2023.0,28000.0,First Owner,Automatic,2998.0,Petrol,New Delhi,Apr 2025,2025.0,2.0,23000000.0
+Renault,Triber RXL BSVI,2020.0,39000.0,First Owner,Manual,999.0,Petrol,New Delhi,Nov 2020,2020.0,5.0,395000.0
+Mahindra,XUV300 W4,2023.0,24785.0,First Owner,Manual,1197.0,Petrol,Ghaziabad,Apr 2023,2023.0,2.0,727000.0
+Tata,Punch Adventure CNG,2024.0,14645.0,First Owner,Manual,1199.0,CNG,New Delhi,Feb 2024,2024.0,1.0,720000.0
+Maruti,Baleno 1.2 Sigma,2016.0,79579.0,First Owner,Manual,1197.0,Petrol,New Delhi,Jun 2016,2016.0,9.0,409999.99999999994
+Hyundai,Creta EX BSVI,2020.0,24740.0,First Owner,Manual,1497.0,Petrol,New Delhi,Jun 2020,2020.0,5.0,939000.0
+Mercedes-Benz,S-Class S 350d,2023.0,9000.0,First Owner,Automatic,2925.0,Diesel,New Delhi,Jun 2023,2023.0,2.0,13000000.0
+Jaguar,F-Pace 2.0 R-Dynamic S,2021.0,,2023,Manual,1198.0,5 Seats,New Delhi,Expired,,4.0,6500000.0
+Mercedes-Benz,GLS 450d 4matic,2024.0,14000.0,First Owner,Automatic,2925.0,Diesel,New Delhi,Oct 2024,2024.0,1.0,13000000.0
+Mercedes-Benz,G-Class 400d AMG Line,2023.0,10000.0,First Owner,Automatic,2925.0,Diesel,New Delhi,Aug 2023,2023.0,2.0,26500000.0
+Renault,Kiger RXE,2021.0,50000.0,First Owner,Manual,999.0,Petrol,New Delhi,Nov 2021,2021.0,4.0,469000.00000000006
+Mercedes-Benz,GLS 450 4matic,2024.0,7000.0,First Owner,Automatic,2999.0,Petrol,New Delhi,Sept 2024,2024.0,1.0,13000000.0
+BMW,X7 xDrive40d M Sport,2024.0,9000.0,First Owner,Automatic,2993.0,Diesel,New Delhi,May 2024,2024.0,1.0,11900000.0
+BMW,X7 xDrive40d M Sport BSVI,2023.0,12000.0,First Owner,Automatic,2993.0,Diesel,New Delhi,Sept 2023,2023.0,2.0,11700000.0
+Renault,KWID 1.0 AMT RXT,2017.0,42680.0,Second Owner,Automatic,999.0,Petrol,Chennai,Jun 2017,2017.0,8.0,332000.0
+Maruti,Alto K10 VXI,2019.0,35890.0,Second Owner,Manual,998.0,Petrol,Chennai,Oct 2019,2019.0,6.0,346000.0
+Renault,Triber RXZ EASY-R AMT Dual Tone,2023.0,40674.0,First Owner,Automatic,999.0,Petrol,Chennai,Jun 2023,2023.0,2.0,619000.0
+Mini,Cooper Countryman S JCW Inspired,2023.0,20000.0,First Owner,Automatic,1998.0,Petrol,Chennai,2023,,2.0,4050000.0
+Volkswagen,Taigun 1.0 TSI Topline AT BSVI,2022.0,13000.0,First Owner,Automatic,999.0,Petrol,Chennai,Jun 2022,2022.0,3.0,1550000.0
+Honda,Amaze 2nd Gen VX BSVI,2022.0,11800.0,First Owner,Manual,1199.0,Petrol,Chennai,Feb 2022,2022.0,3.0,730000.0
+Maruti,FRONX Alpha Turbo AT,2023.0,9134.0,First Owner,Automatic,998.0,Petrol,Chennai,Sept 2023,2023.0,2.0,1255000.0
+Tata,Tiago XZA Plus AMT BSVI,2021.0,50000.0,First Owner,Automatic,1199.0,Petrol,Chennai,2021,,4.0,540000.0
+Toyota,Urban cruiser High AT,2022.0,40434.0,Second Owner,Automatic,1462.0,Petrol,Chennai,Sept 2022,2022.0,3.0,819000.0
+Ford,Ecosport 1.5 Petrol Trend Plus AT BSIV,2018.0,29350.0,First Owner,Automatic,1497.0,Petrol,Chennai,Dec 2018,2018.0,7.0,641000.0
+Tata,Tiago 1.2 Revotron XZA,2018.0,27745.0,First Owner,Automatic,1199.0,Petrol,Chennai,May 2018,2018.0,7.0,492000.0
+Mercedes-Benz,EQS 580 4Matic,2021.0,20000.0,First Owner,2022,1198.0,Electric,Chennai,2022,,4.0,9900000.0
+Renault,Kiger RXZ Turbo CVT,2021.0,13720.0,First Owner,Automatic,999.0,Petrol,Chennai,Dec 2021,2021.0,4.0,814000.0
+Renault,Kiger RXZ,2022.0,35578.0,First Owner,Manual,999.0,Petrol,Chennai,Mar 2022,2022.0,3.0,675000.0
+Mahindra,XUV300 W6 BSVI,2024.0,6500.0,First Owner,Manual,1197.0,Petrol,Chennai,Jun 2024,2024.0,1.0,990000.0
+Skoda,Kushaq 1.0 TSI Active BSVI,2022.0,50000.0,First Owner,Manual,999.0,Petrol,Chennai,2022,,3.0,780000.0
+Tata,Punch Accomplished Dazzle S,2022.0,16557.0,First Owner,Manual,1199.0,Petrol,Chennai,Jan 2022,2022.0,3.0,731000.0
+Renault,Kiger RXZ,2022.0,22212.0,Second Owner,Manual,999.0,Petrol,Chennai,Mar 2022,2022.0,3.0,639000.0
+Renault,Kiger RXT AMT,2021.0,13323.0,First Owner,Automatic,999.0,Petrol,Chennai,Sept 2021,2021.0,4.0,624000.0
+Mahindra,XUV700 AX7 AT Luxury Pack BSVI,2023.0,30000.0,First Owner,Automatic,1999.0,Petrol,Chennai,2023,,2.0,2500000.0
+Tata,Nexon XZ Plus Dark Edition,2021.0,25268.0,First Owner,Manual,1199.0,Petrol,Bangalore,Aug 2021,2021.0,4.0,915000.0
+Maruti,Baleno Alpha Diesel,2021.0,11784.0,First Owner,Manual,1248.0,Diesel,Bangalore,Feb 2021,2021.0,4.0,836999.9999999999
+Nissan,Magnite Turbo XV Premium,2022.0,17860.0,First Owner,Manual,999.0,Petrol,Bangalore,Jan 2023,2023.0,3.0,869999.9999999999
+Hyundai,i20 Asta Opt BSVI,2022.0,22000.0,First Owner,Manual,1197.0,Petrol,Bangalore,Aug 2022,2022.0,3.0,900000.0
+Renault,KWID 1.0 AMT RXT,2016.0,23020.0,Second Owner,Automatic,999.0,Petrol,Bangalore,Sept 2016,2016.0,9.0,307000.0
+Maruti,Alto K10 VXI,2017.0,36344.0,Second Owner,Manual,998.0,Petrol,Bangalore,Apr 2017,2017.0,8.0,327000.0
+Renault,KWID RXT,2015.0,63051.0,First Owner,Manual,799.0,Petrol,Bangalore,Oct 2015,2015.0,10.0,278000.0
+Kia,Sonet GTX Plus Turbo DCT,2023.0,15000.0,First Owner,Automatic,998.0,Petrol,Bangalore,Jul 2023,2023.0,2.0,1325000.0
+Hyundai,Xcent Petrol,2021.0,,Manual,Manual,2015.0,Petrol,Bangalore,Mar 2015,2015.0,4.0,331000.0
+Renault,Kiger RXZ,2023.0,4031.0,First Owner,Manual,999.0,Petrol,Bangalore,Jun 2023,2023.0,2.0,844000.0
+Hyundai,Grand i10 Nios Sportz AMT,2024.0,3576.0,First Owner,Automatic,1197.0,Petrol,Bangalore,Jun 2024,2024.0,1.0,850000.0
+BMW,X4 M Sport X xDrive30i,2021.0,21000.0,First Owner,Automatic,1998.0,Petrol,Bangalore,May 2021,2021.0,4.0,5400000.0
+Renault,KWID 1.0 AMT RXT,2017.0,37637.0,Second Owner,Automatic,999.0,Petrol,Bangalore,Mar 2017,2017.0,8.0,333000.0
+Maruti,Celerio ZXI AMT BSVI,2022.0,20978.0,First Owner,Automatic,998.0,Petrol,Bangalore,Nov 2022,2022.0,3.0,535000.0
+Renault,KWID RXT,2016.0,21600.0,First Owner,Manual,799.0,Petrol,Bangalore,Dec 2016,2016.0,9.0,322000.0
+BMW,X5 xDrive 30d,2015.0,100600.0,Second Owner,Automatic,2993.0,Diesel,Bangalore,Oct 2015,2015.0,10.0,2750000.0
+Kia,Carens Prestige Plus Diesel,2023.0,45581.0,First Owner,Manual,1493.0,Diesel,Bangalore,Mar 2023,2023.0,2.0,1297000.0
+Hyundai,Xcent Petrol,2021.0,,Manual,Manual,2015.0,Petrol,Bangalore,Dec 2015,2015.0,4.0,419000.00000000006
+Citroen,C5 Aircross Shine Dual Tone,2023.0,13474.0,First Owner,Automatic,1997.0,Diesel,Bangalore,Jan 2024,2024.0,2.0,875000.0
+Hyundai,i10 Sportz AT,2010.0,58000.0,Second Owner,Automatic,1197.0,Petrol,Bangalore,May 2010,2010.0,15.0,254999.99999999997
+Kia,Seltos GTX Plus Turbo DCT,2023.0,10931.0,First Owner,Automatic,1482.0,Petrol,Ahmedabad,Mar 2023,2023.0,2.0,1789999.9999999998
+Maruti,Ignis Sigma BSVI,2021.0,68133.0,First Owner,Manual,1197.0,Petrol,Ahmedabad,Mar 2021,2021.0,4.0,408000.0
+Maruti,Celerio ZXI,2016.0,72209.0,First Owner,Manual,998.0,Petrol,Ahmedabad,May 2016,2016.0,9.0,368000.0
+Honda,City V MT,2021.0,40000.0,First Owner,Manual,1498.0,Petrol,Ahmedabad,2021,,4.0,900000.0
+Volkswagen,Polo Cup Edition Comfortline,2013.0,57729.0,First Owner,Manual,999.0,Petrol,Ahmedabad,Mar 2013,2013.0,12.0,327000.0
+Renault,Triber RXL BSIV,2020.0,34067.0,First Owner,Manual,999.0,Petrol,Ahmedabad,Jan 2020,2020.0,5.0,426999.99999999994
+Maruti,Alto 800 LXI,2018.0,52960.0,Second Owner,Manual,796.0,Petrol,Ahmedabad,Apr 2018,2018.0,7.0,262000.0
+Maruti,Baleno 1.2 CVT Alpha,2019.0,100000.0,Second Owner,Automatic,1197.0,Petrol,Ahmedabad,2019,,6.0,500000.0
+Kia,Carens Luxury Plus iMT 6 STR,2023.0,14649.0,First Owner,Manual,1482.0,Petrol,Ahmedabad,Sept 2023,2023.0,2.0,1215000.0
+Maruti,Celerio VXI,2023.0,25832.0,First Owner,Manual,998.0,Petrol,Ahmedabad,May 2023,2023.0,2.0,471000.0
+Maruti,Alto 800 VXI,2022.0,13402.0,First Owner,Manual,796.0,Petrol,Ahmedabad,Nov 2022,2022.0,3.0,386000.0
+Kia,Sonet HTK Plus,2024.0,17000.0,First Owner,Manual,1197.0,Petrol,Ahmedabad,2024,,1.0,1040000.0
+Renault,KWID 1.0 RXT,2017.0,42500.0,First Owner,Manual,999.0,Petrol,Ahmedabad,Nov 2017,2017.0,8.0,299000.0
+Renault,KWID 1.0 RXT Opt,2017.0,38051.0,First Owner,Manual,999.0,Petrol,Ahmedabad,Sept 2017,2017.0,8.0,324000.0
+Nissan,Magnite Tekna Plus AMT,2024.0,2964.0,First Owner,Automatic,999.0,Petrol,Ahmedabad,Oct 2024,2024.0,1.0,777000.0
+Hyundai,Grand i10 Sportz,2020.0,52000.0,First Owner,Manual,1197.0,Petrol,Ahmedabad,Mar 2020,2020.0,5.0,511000.00000000006
+Hyundai,Grand i10 1.2 Kappa Sportz BSIV,2020.0,25828.0,First Owner,Manual,1197.0,Petrol,Ahmedabad,Feb 2020,2020.0,5.0,549000.0
+Kia,Seltos HTX,2023.0,25155.0,First Owner,Manual,1497.0,Petrol,Ahmedabad,Feb 2023,2023.0,2.0,1255000.0
+Kia,Seltos HTK G,2022.0,23440.0,First Owner,Manual,1497.0,Petrol,Ahmedabad,Jun 2022,2022.0,3.0,969999.9999999999
+Kia,Sonet HTK Plus BSVI,2020.0,34000.0,First Owner,Manual,1197.0,Petrol,Ahmedabad,Jan 2021,2021.0,5.0,799000.0
