@@ -1,1 +1,12 @@
-key : value
+COLUMNS:
+  make: object
+  model: object
+  km_driven: float64
+  ownership: object
+  transmission: object
+  engine: float64
+  fuel: object
+  city: object
+  reg_year_int: float64
+  car_age: float64
+  price: float64
