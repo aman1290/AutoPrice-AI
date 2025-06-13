@@ -197,3 +197,6 @@ cython_debug/
 
 
 doc.txt
+
+
+artifacts/*
