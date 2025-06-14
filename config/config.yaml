@@ -8,17 +8,18 @@ data_ingestion:
   unzip_dir: artifacts/data_ingestion
 
 
+#config for data validation pipeline
 
 data_validation:
   root_dir: artifacts/data_validation
   unzip_data_dir: artifacts/data_ingestion/dataset/cardatav_02.csv
   STATUS_FILE: artifacts/data_validation/status.txt
 
-
+#config for data transformation pipeline
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/dataset/cardatav_01.csv
+  data_path: artifacts/data_ingestion/dataset/cardatav_02.csv
 
 
 
