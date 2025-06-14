@@ -10,3 +10,8 @@ COLUMNS:
   reg_year_int: float64
   car_age: float64
   price: float64
+  
+TARGET_COLUMN:
+  name: price
+
+
