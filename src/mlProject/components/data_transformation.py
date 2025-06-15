@@ -4,73 +4,95 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 from sklearn.impute import SimpleImputer
 from mlProject.entity.config_entity import DataTransformationConfig
+import category_encoders as ce
+from sklearn.preprocessing import OneHotEncoder
 
 
 class DataTransformation:
-    def __init__(self, config: DataTransformationConfig):
+    def __init__(self, config):
         self.config = config
+        self.ownership_map = {
+            'First Owner': 1,
+            'Second Owner': 2,
+            'Third Owner': 3,
+            'Fourth Owner': 4
+        }
+        self.transmission_map = {
+            'Manual': 0,
+            'Automatic': 1
+        }
+
+    def _preprocess_data(self, data):
+        """Apply initial preprocessing to data"""
+        # Convert mappings
+        data['ownership'] = data['ownership'].map(self.ownership_map)
+        data['transmission'] = data['transmission'].map(self.transmission_map)
+        return data
 
     def train_test_splitting(self):
-        """Complete data transformation and splitting pipeline"""
+        """Complete data transformation pipeline with leakage prevention"""
         try:
-            # 1. Load data
+            # Load data
             data = pd.read_csv(self.config.data_path)
             logger.info(f"Original data shape: {data.shape}")
 
-            # 2. Convert numeric columns
-            numeric_cols = ['km_driven', 'engine', 'price', 'reg_year_int']
-            for col in numeric_cols:
-                data[col] = pd.to_numeric(data[col], errors='coerce')
-
-            # 3. Handle null values
-            logger.info("Handling null values")
-            null_counts = data.isnull().sum()
-            logger.info(f"Null values detected:\n{null_counts[null_counts > 0]}")
-            
-            data = data.dropna(subset=['price'])
-            data['engine'] = data['engine'].fillna(data['engine'].mode()[0])
-            data['km_driven'] = data['km_driven'].fillna(data['km_driven'].median())
-            data['transmission'] = data['transmission'].fillna(data['transmission'].mode()[0])
-            data['ownership'] = data['ownership'].fillna('Unknown')
-
-            # 4. Clean data
-            logger.info("Cleaning data")
-            data['ownership'] = data['ownership'].map({
-                'First Owner': 1, 'Second Owner': 2, 'Third Owner': 3,
-                'Fourth Owner': 4, 'Fifth Owner': 5, 'Unknown': -1
-            })
-            
-            model_split = data['model'].str.split(n=1, expand=True)
-            data['model_base'] = model_split[0]
-            data['variant'] = model_split[1].fillna('Standard')
-            data['is_automatic'] = (data['transmission'] == 'Automatic').astype(int)
-
-            # 5. Add features
-            logger.info("Adding features")
-            data['price_per_cc'] = data['price'] / data['engine']
-            data['car_age'] = pd.Timestamp.now().year - data['reg_year_int']
-            data['km_per_year'] = data['km_driven'] / data['car_age']
-            data['age_group'] = pd.cut(
-                data['car_age'],
-                bins=[0, 3, 7, 12, float('inf')],
-                labels=['New', 'Mid', 'Old', 'Vintage']
+            # Initial split to prevent leakage
+            train, test = train_test_split(
+                data,
+                test_size=self.config.test_size,
+                random_state=self.config.random_state
             )
+            logger.info(f"Initial split - Train: {train.shape}, Test: {test.shape}")
 
-            # 6. Split data
-            train, test = train_test_split(data, test_size=0.25, random_state=42)
+            # Apply base preprocessing
+            train = self._preprocess_data(train)
+            test = self._preprocess_data(test)
+
+            # Target encoding for 'model'
+            model_encoder = ce.TargetEncoder(cols=['model'], smoothing=5.0)
+            model_encoder.fit(train['model'], train['price'])
+            train['model_encoded'] = model_encoder.transform(train['model'])
+            test['model_encoded'] = model_encoder.transform(test['model'])
+
+            # One-hot encoding for other categorical features
+            ohe_columns = ['make', 'fuel', 'city']
+            ohe = OneHotEncoder(drop='first', sparse_output=False, handle_unknown='ignore')
+            ohe.fit(train[ohe_columns])
             
-            # 7. Save results
+            # Transform features
+            train_ohe = pd.DataFrame(
+                ohe.transform(train[ohe_columns]),
+                columns=ohe.get_feature_names_out(ohe_columns),
+                index=train.index
+            )
+            test_ohe = pd.DataFrame(
+                ohe.transform(test[ohe_columns]),
+                columns=ohe.get_feature_names_out(ohe_columns),
+                index=test.index
+            )
+            
+            # Combine encoded data
+            train = pd.concat([
+                train.drop(columns=['model'] + ohe_columns),
+                train_ohe
+            ], axis=1)
+            
+            test = pd.concat([
+                test.drop(columns=['model'] + ohe_columns),
+                test_ohe
+            ], axis=1)
+
+            # Save processed data
             os.makedirs(self.config.root_dir, exist_ok=True)
             train_path = os.path.join(self.config.root_dir, "train.csv")
             test_path = os.path.join(self.config.root_dir, "test.csv")
             train.to_csv(train_path, index=False)
             test.to_csv(test_path, index=False)
-            
-            logger.info(f"Train shape: {train.shape}, Test shape: {test.shape}")
+
+            logger.info(f"Final train shape: {train.shape}, test shape: {test.shape}")
+            logger.info(f"Processed data saved to {self.config.root_dir}")
             return train_path, test_path
-            
+
         except Exception as e:
             logger.error(f"Data transformation failed: {str(e)}")
-            raise e
-
-
+            raise

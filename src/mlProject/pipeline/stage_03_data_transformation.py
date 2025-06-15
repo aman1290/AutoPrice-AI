@@ -22,7 +22,7 @@ class DataTransformationTrainingPipeline:
                 data_transformation_config = config.get_data_transformation_config()
                 data_transformation = DataTransformation(config=data_transformation_config)
                 train_path, test_path = data_transformation.train_test_splitting()
-
+                logger.info(f"Pipeline completed successfully")
             else:
                 raise Exception("You data schema is not valid")
 

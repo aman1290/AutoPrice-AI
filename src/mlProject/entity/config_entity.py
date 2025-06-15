@@ -25,3 +25,12 @@ from pathlib import Path
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
+
+@dataclass
+class DataTransformationConfig:
+    root_dir: str
+    data_path: str
+    target_column: str
+    target_encode_cols: list
+    test_size: float
+    random_state: int

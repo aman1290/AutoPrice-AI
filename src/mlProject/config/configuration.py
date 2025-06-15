@@ -1,7 +1,7 @@
 from mlProject.constants import*
 from mlProject.utils.common import read_yaml, create_directories 
 from mlProject.entity.config_entity import (DataIngestionConfig ,DataValidationConfig,DataTransformationConfig)
-
+from mlProject import logger
 
 class ConfigurationManager:
     def __init__(
@@ -51,13 +51,31 @@ class ConfigurationManager:
     
     
     def get_data_transformation_config(self) -> DataTransformationConfig:
-        config = self.config.data_transformation
+        try:
+            # Verify config sections exist
+            if not hasattr(self.config, 'data_transformation'):
+                raise ValueError("Missing 'data_transformation' in config")
+            if not hasattr(self.schema, 'TARGET_COLUMN'):
+                raise ValueError("Missing 'TARGET_COLUMN' in schema")
 
-        create_directories([config.root_dir])
+            config = self.config.data_transformation
+            schema = self.schema.TARGET_COLUMN
 
-        data_transformation_config = DataTransformationConfig(
-            root_dir=config.root_dir,
-            data_path=config.data_path,
-        )
+            # Set default params if not specified
+            target_encode_cols = getattr(self.params, 'target_encode_cols', ["model"])
+            test_size = getattr(self.params, 'test_size', 0.25)
+            random_state = getattr(self.params, 'random_state', 42)
 
-        return data_transformation_config
+            create_directories([config.root_dir])
+
+            return DataTransformationConfig(
+                root_dir=config.root_dir,
+                data_path=config.data_path,
+                target_column=schema.name,
+                target_encode_cols=target_encode_cols,
+                test_size=test_size,
+                random_state=random_state
+            )
+        except Exception as e:
+            logger.error(f"Failed to create data transformation config: {str(e)}")
+            raise
