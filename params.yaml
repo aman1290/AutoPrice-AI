@@ -7,3 +7,17 @@ model_training:
   target_encode_cols: ["model", "make"]
   test_size: 0.20
   random_state: 42
+
+Xgboost:
+    model__n_estimators: [100, 200]
+    model__max_depth: [3, 6, 9]
+    model__learning_rate: [0.01, 0.1, 0.2]
+    model__subsample: [0.8, 1.0]
+    model__colsample_bytree: [0.8, 1.0]
+    model__gamma: [0, 0.1, 0.2]
+    model__reg_alpha: [0, 0.1, 1]
+    model__reg_lambda: [0, 0.1, 1]
+cv:
+    folds: 5
+scoring_metric: 'neg_mean_squared_error'
+random_state: 42

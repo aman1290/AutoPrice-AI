@@ -196,7 +196,7 @@ cython_debug/
 .cursorindexingignore
 
 
-doc.txt
+doc.txt/
 
 
 artifacts/*
