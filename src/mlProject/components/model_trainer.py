@@ -22,8 +22,8 @@ class ModelTrainer:
 
         # Initialize XGBoost regressor with parameters from config
         xgb = XGBRegressor(
-            n_estimators=100,  # You can add these to your config if needed
-            max_depth=6,
+            n_estimators=300,  # You can add these to your config if needed
+            max_depth=4,
             learning_rate=0.1,
             random_state=42,
             n_jobs=-1  # Use all CPU cores

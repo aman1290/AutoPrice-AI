@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/d837529b503a47f4b8e43a89367ef1c9/artifacts
+end_time: 1750193818425
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d837529b503a47f4b8e43a89367ef1c9
+run_name: inquisitive-tern-388
+run_uuid: d837529b503a47f4b8e43a89367ef1c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750193814603
+status: 3
+tags: []
+user_id: anand
