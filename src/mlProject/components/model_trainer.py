@@ -31,4 +31,8 @@ class ModelTrainer:
         
         xgb.fit(train_x, train_y.values.ravel())  # XGBoost needs 1D array for y
 
+# Save feature columns
+        feature_names = list(train_x.columns)
+        joblib.dump(feature_names, "artifacts/data_transformation/feature_names.pkl")
+
         joblib.dump(xgb, os.path.join(self.config.root_dir, self.config.model_name))

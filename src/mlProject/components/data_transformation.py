@@ -6,7 +6,7 @@ from sklearn.impute import SimpleImputer
 from mlProject.entity.config_entity import DataTransformationConfig
 import category_encoders as ce
 from sklearn.preprocessing import OneHotEncoder
-
+import joblib
 
 class DataTransformation:
     def __init__(self, config):
@@ -88,6 +88,8 @@ class DataTransformation:
             test_path = os.path.join(self.config.root_dir, "test.csv")
             train.to_csv(train_path, index=False)
             test.to_csv(test_path, index=False)
+            joblib.dump(model_encoder, os.path.join(self.config.root_dir, "model_encoder.pkl"))
+            joblib.dump(ohe, os.path.join(self.config.root_dir, "ohe_encoder.pkl"))
 
             logger.info(f"Final train shape: {train.shape}, test shape: {test.shape}")
             logger.info(f"Processed data saved to {self.config.root_dir}")

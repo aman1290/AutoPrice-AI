@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/55a814a3d96d4e648ba2113bd5e4cae7/artifacts
+end_time: 1750198007198
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 55a814a3d96d4e648ba2113bd5e4cae7
+run_name: polite-colt-986
+run_uuid: 55a814a3d96d4e648ba2113bd5e4cae7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750197999567
+status: 3
+tags: []
+user_id: anand

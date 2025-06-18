@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/e6d9c8d393614e58ac5e008cb9cd3910/artifacts
+end_time: 1750198298132
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e6d9c8d393614e58ac5e008cb9cd3910
+run_name: merciful-cow-298
+run_uuid: e6d9c8d393614e58ac5e008cb9cd3910
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750198285621
+status: 3
+tags: []
+user_id: anand

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/c5ecfd7c424b4ee6bb402a04e226aa91/artifacts
+end_time: 1750197721012
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c5ecfd7c424b4ee6bb402a04e226aa91
+run_name: handsome-wren-508
+run_uuid: c5ecfd7c424b4ee6bb402a04e226aa91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750197713900
+status: 3
+tags: []
+user_id: anand

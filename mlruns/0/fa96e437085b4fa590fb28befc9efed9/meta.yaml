@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/fa96e437085b4fa590fb28befc9efed9/artifacts
+end_time: 1750197233010
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa96e437085b4fa590fb28befc9efed9
+run_name: caring-bear-652
+run_uuid: fa96e437085b4fa590fb28befc9efed9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750197225400
+status: 3
+tags: []
+user_id: anand

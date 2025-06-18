@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/a57345a48c7a40dfb6c5e53b2f21802c/artifacts
+end_time: 1750274185917
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a57345a48c7a40dfb6c5e53b2f21802c
+run_name: fun-mole-231
+run_uuid: a57345a48c7a40dfb6c5e53b2f21802c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750274177579
+status: 3
+tags: []
+user_id: anand
