@@ -10,9 +10,10 @@ tqdm
 ensure==1.0.2
 joblib
 types-PyYAML
-Flask
-Flask-Cors
+python-multipart
 category_encoders
 xgboost
 seaborn
+fastapi
+uvicorn 
 -e .

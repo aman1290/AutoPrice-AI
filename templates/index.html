@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Car Price Predictor</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4cc9f0;
+            --success: #4ad66d;
+            --warning: #f8961e;
+            --danger: #ef233c;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            transform: rotate(30deg);
+        }
+        
+        .car-img-select {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: white;
+        }
+        
+        .car-img-select:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+        }
+        
+        .car-img-select.selected {
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 0 4px rgba(76, 201, 240, 0.3);
+            position: relative;
+        }
+        
+        .car-img-select.selected::after {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--accent);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .car-img-select img {
+            height: 120px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .car-img-select:hover img {
+            transform: scale(1.05);
+        }
+        
+        .car-card-body {
+            background: white;
+            padding: 1rem;
+        }
+        
+        #selectedCarImage {
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid white;
+            background: var(--light-bg);
+            padding: 10px;
+        }
+        
+        .price-display {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, var(--success), #2a9d8f);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .form-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: white;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .form-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .form-header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, var(--accent), transparent);
+        }
+        
+        .form-control, .form-select {
+            border-radius: 8px;
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 0.25rem rgba(76, 201, 240, 0.25);
+        }
+        
+        .btn-predict {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border: none;
+            padding: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-predict:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(67, 97, 238, 0.3);
+        }
+        
+        .btn-predict::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(30deg);
+            transition: all 0.3s;
+        }
+        
+        .btn-predict:hover::after {
+            left: 100%;
+        }
+        
+        .result-card {
+            border: none;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .result-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .result-header {
+            background: linear-gradient(to right, #4cc9f0, #4895ef);
+            color: white;
+            padding: 1rem;
+            border-radius: 15px 15px 0 0;
+            position: relative;
+        }
+        
+        .result-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), transparent);
+        }
+        
+        .car-make-model {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            text-align: center;
+            display: block;
+            font-size: 1.2rem;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .tag-primary {
+            background-color: rgba(67, 97, 238, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(67, 97, 238, 0.2);
+        }
+        
+        .tag-success {
+            background-color: rgba(74, 214, 109, 0.1);
+            color: var(--success);
+            border: 1px solid rgba(74, 214, 109, 0.2);
+        }
+        
+        .tag-warning {
+            background-color: rgba(248, 150, 30, 0.1);
+            color: var(--warning);
+            border: 1px solid rgba(248, 150, 30, 0.2);
+        }
+        
+        .tag-danger {
+            background-color: rgba(239, 35, 60, 0.1);
+            color: var(--danger);
+            border: 1px solid rgba(239, 35, 60, 0.2);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Loading spinner */
+        .spinner-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .spinner {
+            width: 70px;
+            height: 70px;
+            border: 8px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 1.5rem;
+            }
+            
+            .price-display {
+                font-size: 2rem;
+            }
+            
+            .car-img-select img {
+                height: 100px;
+            }
+        }
+        
+        /* Tooltip styles */
+        .tooltip-icon {
+            color: var(--primary);
+            cursor: help;
+            margin-left: 5px;
+        }
+        
+        /* Improved input labels */
+        .form-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        /* Placeholder styling */
+        ::placeholder {
+            color: #adb5bd !important;
+            opacity: 1;
+        }
+        
+        /* Range slider styling */
+        .form-range::-webkit-slider-thumb {
+            background: var(--primary);
+        }
+        
+        .form-range::-moz-range-thumb {
+            background: var(--primary);
+        }
+        
+        .form-range::-ms-thumb {
+            background: var(--primary);
+        }
+        
+        /* Manual car entry styles */
+        .manual-car-entry {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .manual-car-toggle {
+            color: var(--primary);
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .manual-car-toggle:hover {
+            text-decoration: underline;
+        }
+        
+        .manual-car-fields {
+            display: none;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Price range styles */
+        .price-range-box {
+            background: rgba(74, 214, 109, 0.1);
+            border: 1px solid rgba(74, 214, 109, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .price-range-title {
+            font-weight: 600;
+            color: var(--success);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container py-5">
+        <!-- Hero Section -->
+        <div class="hero-section text-center">
+            <h1 class="display-4 fw-bold mb-3">🚗 AI Car Price Predictor</h1>
+            <p class="lead mb-0">Get an instant valuation for your car based on market trends and machine learning</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Car Selection Grid -->
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="mb-0 fw-bold text-gradient">Select Your Car</h3>
+                    <small class="text-muted">Click on a car to select</small>
+                </div>
+                <div class="row g-3" id="carGrid">
+                    <!-- Car options will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Form and Results Section -->
+            <div class="col-lg-6">
+                <div class="form-card h-100">
+                    <div class="form-header">
+                        <h3 class="mb-0"><i class="fas fa-car me-2"></i>Car Details</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="predictionForm">
+                            <!-- Selected Car Display -->
+                            <div class="text-center mb-4">
+                                <img id="selectedCarImage" src="https://via.placeholder.com/300x150?text=Select+a+car" class="img-fluid mb-3 pulse" alt="Selected Car">
+                                <span id="makeModelDisplay" class="car-make-model">Make & Model</span>
+                                
+                                <!-- Manual Car Entry Section -->
+                                <div class="manual-car-entry">
+                                    <div class="manual-car-toggle" id="toggleManualEntry">
+                                        <i class="fas fa-search me-2"></i>Can't find your car? Enter manually
+                                    </div>
+                                    <div class="manual-car-fields" id="manualCarFields">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="manualMake" class="form-label">
+                                                    <i class="fas fa-car me-2"></i>Make
+                                                </label>
+                                                <input type="text" class="form-control" id="manualMake" placeholder="e.g. Toyota">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="manualModel" class="form-label">
+                                                    <i class="fas fa-car-side me-2"></i>Model
+                                                </label>
+                                                <input type="text" class="form-control" id="manualModel" placeholder="e.g. Corolla">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-sm btn-primary" id="confirmManualCar">
+                                            <i class="fas fa-check me-1"></i>Use This Car
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary ms-2" id="cancelManualCar">
+                                            <i class="fas fa-times me-1"></i>Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hidden fields for make and model -->
+                            <input type="hidden" id="make" name="make">
+                            <input type="hidden" id="model" name="model">
+
+                            <!-- Form Fields -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="year" class="form-label">
+                                        <i class="fas fa-calendar-alt me-2"></i>Manufacturing Year
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="year" name="year" min="2005" max="2025" placeholder="e.g. 2018" required>
+                                        <span class="input-group-text"><i class="fas fa-info-circle tooltip-icon" title="Enter year between 2005-2025"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="kms_driven" class="form-label">
+                                        <i class="fas fa-tachometer-alt me-2"></i>Kilometers Driven
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="kms_driven" name="kms_driven" min="0" placeholder="e.g. 45000" required>
+                                        <span class="input-group-text">km</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="ownership" class="form-label">
+                                        <i class="fas fa-user-tag me-2"></i>Ownership
+                                    </label>
+                                    <select class="form-select" id="ownership" name="ownership" required>
+                                        <option value="" disabled selected>Select Ownership</option>
+                                        <option value="First Owner">First Owner</option>
+                                        <option value="Second Owner">Second Owner</option>
+                                        <option value="Third Owner">Third Owner</option>
+                                        <option value="Fourth & Above Owner">Fourth & Above Owner</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="transmission" class="form-label">
+                                        <i class="fas fa-cogs me-2"></i>Transmission
+                                    </label>
+                                    <select class="form-select" id="transmission" name="transmission" required>
+                                        <option value="" disabled selected>Select Transmission</option>
+                                        <option value="Manual">Manual</option>
+                                        <option value="Automatic">Automatic</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="fuel" class="form-label">
+                                        <i class="fas fa-gas-pump me-2"></i>Fuel Type
+                                    </label>
+                                    <select class="form-select" id="fuel" name="fuel" required>
+                                        <option value="" disabled selected>Select Fuel Type</option>
+                                        <option value="Petrol">Petrol</option>
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="CNG">CNG</option>
+                                        <option value="Electric">Electric</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="engine" class="form-label">
+                                        <i class="fas fa-engine me-2"></i>Engine (cc)
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="engine" name="engine" min="800" placeholder="e.g. 1200" required>
+                                        <span class="input-group-text">cc</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="city" class="form-label">
+                                    <i class="fas fa-city me-2"></i>City
+                                </label>
+                                <input list="cities" class="form-control" id="city" name="city" placeholder="Start typing your city..." required>
+                                <datalist id="cities">
+                                    <option value="Delhi">
+                                    <option value="Mumbai">
+                                    <option value="Bangalore">
+                                    <option value="Hyderabad">
+                                    <option value="Chennai">
+                                    <option value="Kolkata">
+                                    <option value="Pune">
+                                    <option value="Ahmedabad">
+                                    <option value="Jaipur">
+                                    <option value="Lucknow">
+                                </datalist>
+                            </div>
+
+                            <button type="submit" class="btn btn-predict w-100 text-white fw-bold py-3">
+                                <i class="fas fa-magic me-2"></i>Predict Price
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="col-lg-6">
+                <div class="result-card h-100">
+                    <div class="result-header text-center">
+                        <h3 class="mb-0"><i class="fas fa-chart-line me-2"></i>Estimated Price</h3>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center py-5">
+                        <div id="priceResult" class="text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-car-side" style="font-size: 3rem; color: #4361ee;"></i>
+                            </div>
+                            <p class="text-muted">Fill the form and click "Predict Price" to get an estimate</p>
+                        </div>
+                        
+                        <!-- Price Range Display -->
+                        <div id="priceRange" class="text-center mt-3" style="display: none;">
+                            <div class="price-range-box p-3 mb-3 rounded">
+                                <h5 class="price-range-title mb-2">
+                                    <i class="fas fa-arrows-alt-h me-2"></i>Expected Price Range
+                                </h5>
+                                <div class="fs-4 fw-bold text-primary" id="rangeValue"></div>
+                                <small class="text-muted">(±1.5 lakh based on condition)</small>
+                            </div>
+                        </div>
+                        
+                        <div id="carDetails" class="text-center mt-3"></div>
+                        <div id="errorResult" class="alert alert-danger mt-3" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <script>
+        // Enhanced car data with more details
+        const cars = [
+            { 
+                make: "Maruti", 
+                model: "Swift Dzire", 
+                image: "/static/images/maruti_swift_dzire.jpg", 
+                color: "#FF6B6B",
+                popular: true
+            },
+            { 
+                make: "Hyundai", 
+                model: "Creta", 
+                image: "/static/images/hyundai_creta.jpg", 
+                color: "#4ECDC4",
+                popular: true
+            },
+            { 
+                make: "Mahindra", 
+                model: "Scorpio", 
+                image: "/static/images/mahindra_scorpio.jpg", 
+                color: "#45B7D1",
+                popular: true
+            },
+            { 
+                make: "Tata", 
+                model: "Nexon", 
+                image: "/static/images/tata_nexon.jpg", 
+                color: "#FFA07A",
+                popular: true
+            },
+            { 
+                make: "Honda", 
+                model: "City", 
+                image: "/static/images/honda_city.jpg", 
+                color: "#98D8C8",
+                popular: true
+            },
+            { 
+                make: "Toyota", 
+                model: "Innova", 
+                image: "/static/images/toyota_innova.jpg", 
+                color: "#F06292",
+                popular: true
+            },
+            { 
+                make: "Kia", 
+                model: "Seltos", 
+                image: "/static/images/kia_seltos.jpg", 
+                color: "#7986CB",
+                popular: true
+            },
+            { 
+                make: "Renault", 
+                model: "Kwid", 
+                image: "/static/images/renault_kwid.jpg", 
+                color: "#A1887F",
+                popular: false
+            }
+        ];
+
+        // Populate car grid with enhanced cards
+        const carGrid = document.getElementById('carGrid');
+        cars.forEach(car => {
+            const carCard = document.createElement('div');
+            carCard.className = 'col-6 col-md-3';
+            carCard.innerHTML = `
+                <div class="car-img-select h-100" data-make="${car.make}" data-model="${car.model}" data-image="${car.image}" style="border-top: 4px solid ${car.color}">
+                    ${car.popular ? '<span class="badge bg-success position-absolute top-0 start-0 m-2">Popular</span>' : ''}
+                    <img src="${car.image}" class="w-100" alt="${car.make} ${car.model}">
+                    <div class="car-card-body">
+                        <h6 class="card-title mb-0 fw-bold">${car.make}</h6>
+                        <p class="card-text text-muted small">${car.model}</p>
+                    </div>
+                </div>
+            `;
+            carGrid.appendChild(carCard);
+        });
+
+        // Handle car selection with animation
+        document.querySelectorAll('.car-img-select').forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove selected class from all cards
+                document.querySelectorAll('.car-img-select').forEach(c => {
+                    c.classList.remove('selected');
+                });
+                
+                // Add selected class to clicked card with animation
+                this.classList.add('selected');
+                
+                // Update form fields
+                document.getElementById('make').value = this.dataset.make;
+                document.getElementById('model').value = this.dataset.model;
+                document.getElementById('makeModelDisplay').textContent = `${this.dataset.make} ${this.dataset.model}`;
+                
+                // Update car image with fade effect
+                const carImg = document.getElementById('selectedCarImage');
+                carImg.style.opacity = 0;
+                setTimeout(() => {
+                    carImg.src = this.dataset.image;
+                    carImg.style.opacity = 1;
+                }, 200);
+                
+                // Clear any manual entries
+                document.getElementById('manualMake').value = '';
+                document.getElementById('manualModel').value = '';
+                document.getElementById('manualCarFields').style.display = 'none';
+            });
+        });
+
+        // Manual car entry functionality
+        document.getElementById('toggleManualEntry').addEventListener('click', function() {
+            const manualFields = document.getElementById('manualCarFields');
+            manualFields.style.display = manualFields.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        document.getElementById('confirmManualCar').addEventListener('click', function() {
+            const make = document.getElementById('manualMake').value.trim();
+            const model = document.getElementById('manualModel').value.trim();
+            
+            if (!make || !model) {
+                showError("Please enter both make and model");
+                return;
+            }
+            
+            // Update form fields
+            document.getElementById('make').value = make;
+            document.getElementById('model').value = model;
+            document.getElementById('makeModelDisplay').textContent = `${make} ${model}`;
+            
+            // Update car image with generic car image
+            document.getElementById('selectedCarImage').src = "https://via.placeholder.com/300x150?text=" + encodeURIComponent(make + " " + model);
+            
+            // Hide manual entry fields
+            document.getElementById('manualCarFields').style.display = 'none';
+            
+            // Clear manual entry fields
+            document.getElementById('manualMake').value = '';
+            document.getElementById('manualModel').value = '';
+            
+            // Deselect any selected car cards
+            document.querySelectorAll('.car-img-select').forEach(c => {
+                c.classList.remove('selected');
+            });
+            
+            hideError();
+        });
+        
+        document.getElementById('cancelManualCar').addEventListener('click', function() {
+            document.getElementById('manualCarFields').style.display = 'none';
+            document.getElementById('manualMake').value = '';
+            document.getElementById('manualModel').value = '';
+        });
+
+        // Show loading spinner
+        function showLoading() {
+            document.getElementById('loadingSpinner').style.display = 'flex';
+        }
+
+        // Hide loading spinner
+        function hideLoading() {
+            document.getElementById('loadingSpinner').style.display = 'none';
+        }
+
+        // Initialize tooltips
+        document.addEventListener('DOMContentLoaded', function() {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'));
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+
+        // Handle form submission with validation
+        document.getElementById('predictionForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                make: document.getElementById('make').value,
+                model: document.getElementById('model').value,
+                ownership: document.getElementById('ownership').value,
+                transmission: document.getElementById('transmission').value,
+                fuel: document.getElementById('fuel').value,
+                city: document.getElementById('city').value,
+                year: parseInt(document.getElementById('year').value),
+                kms_driven: parseInt(document.getElementById('kms_driven').value),
+                engine: parseInt(document.getElementById('engine').value)
+            };
+
+            // Validate required fields
+            if (!formData.make || !formData.model) {
+                showError("Please select a car from the list or enter make and model manually");
+                return;
+            }
+
+            // Validate year range
+            if (formData.year < 2005 || formData.year > 2025) {
+                showError("Please enter a valid year between 2005-2025");
+                return;
+            }
+
+            try {
+                // Show loading state
+                showLoading();
+                const predictBtn = document.querySelector('#predictionForm button[type="submit"]');
+                predictBtn.disabled = true;
+                predictBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Predicting...';
+
+                // Simulate API call delay (remove in production)
+                await new Promise(resolve => setTimeout(resolve, 1500));
+
+                // For demo purposes, generate a random price between 3-15 lakh
+                const demoPrice = Math.floor(Math.random() * 1200000) + 300000;
+                
+                // Display result with price range
+                displayPrice(demoPrice, formData);
+                hideError();
+
+            } catch (error) {
+                showError("An error occurred. Please try again.");
+                console.error('Prediction error:', error);
+            } finally {
+                // Reset button state
+                hideLoading();
+                const predictBtn = document.querySelector('#predictionForm button[type="submit"]');
+                predictBtn.disabled = false;
+                predictBtn.innerHTML = '<i class="fas fa-magic me-2"></i> Predict Price';
+            }
+        });
+
+        function displayPrice(price, formData) {
+            // Calculate price range (±1.5 lakh)
+            const lowerRange = Math.max(0, price - 150000);  // Ensure not negative
+            const upperRange = price + 150000;
+            
+            // Format with Indian currency formatting
+            const formattedPrice = new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            }).format(price);
+            
+            const formattedRange = new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            }).format(lowerRange) + " - " + 
+               new Intl.NumberFormat('en-IN', {
+                   style: 'currency',
+                   currency: 'INR',
+                   maximumFractionDigits: 0
+               }).format(upperRange);
+
+            document.getElementById('priceResult').innerHTML = `
+                <div class="mb-3">
+                    <i class="fas fa-rupee-sign" style="font-size: 3rem; color: #4ad66d;"></i>
+                </div>
+                <div class="price-display">${formattedPrice}</div>
+                <p class="text-muted mt-2">Predicted Market Value</p>
+            `;
+            
+            // Show the price range
+            document.getElementById('priceRange').style.display = 'block';
+            document.getElementById('rangeValue').textContent = formattedRange;
+            
+            // Show car details
+            document.getElementById('carDetails').innerHTML = `
+                <div class="mt-4">
+                    <span class="tag tag-primary"><i class="fas fa-calendar me-1"></i> ${formData.year}</span>
+                    <span class="tag tag-success"><i class="fas fa-tachometer-alt me-1"></i> ${formData.kms_driven.toLocaleString('en-IN')} km</span>
+                    <span class="tag tag-warning"><i class="fas fa-user-tag me-1"></i> ${formData.ownership}</span>
+                    <span class="tag tag-primary"><i class="fas fa-cog me-1"></i> ${formData.transmission}</span>
+                    <span class="tag tag-success"><i class="fas fa-gas-pump me-1"></i> ${formData.fuel}</span>
+                    <span class="tag tag-warning"><i class="fas fa-engine me-1"></i> ${formData.engine}cc</span>
+                    <span class="tag tag-danger"><i class="fas fa-city me-1"></i> ${formData.city}</span>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-sm btn-outline-primary me-2"><i class="fas fa-share me-1"></i> Share</button>
+                    <button class="btn btn-sm btn-outline-success"><i class="fas fa-download me-1"></i> Save</button>
+                </div>
+            `;
+        }
+
+         function showError(message) {
+            const errorElement = document.getElementById('errorResult');
+            errorElement.innerHTML = `<i class="fas fa-exclamation-circle me-2"></i> ${message}`;
+            errorElement.style.display = 'block';
+            document.getElementById('priceResult').innerHTML = `
+                <div class="mb-4">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #ef233c;"></i>
+                </div>
+                <p class="text-muted">Please correct the errors and try again</p>
+            `;
+            document.getElementById('carDetails').innerHTML = '';
+            
+            // Scroll to error
+            errorElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function hideError() {
+            document.getElementById('errorResult').style.display = 'none';
+        }
+
+        // Add sample data button for demo purposes
+        document.addEventListener('DOMContentLoaded', function() {
+            const demoBtn = document.createElement('button');
+            demoBtn.className = 'btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3';
+            demoBtn.innerHTML = '<i class="fas fa-magic me-1"></i> Load Sample Data';
+            demoBtn.onclick = loadSampleData;
+            document.body.appendChild(demoBtn);
+        });
+
+        function loadSampleData() {
+            // Select a random car
+            const randomCar = cars[Math.floor(Math.random() * cars.length)];
+            document.querySelector(`.car-img-select[data-model="${randomCar.model}"]`).click();
+            
+            // Fill form with sample data
+            document.getElementById('year').value = 2018 + Math.floor(Math.random() * 5);
+            document.getElementById('kms_driven').value = Math.floor(Math.random() * 50000) + 10000;
+            document.getElementById('ownership').value = ["First Owner", "Second Owner", "Third Owner"][Math.floor(Math.random() * 3)];
+            document.getElementById('transmission').value = ["Manual", "Automatic"][Math.floor(Math.random() * 2)];
+            document.getElementById('fuel').value = ["Petrol", "Diesel", "CNG"][Math.floor(Math.random() * 3)];
+            document.getElementById('engine').value = [1000, 1200, 1500, 2000][Math.floor(Math.random() * 4)];
+            document.getElementById('city').value = ["Delhi", "Mumbai", "Bangalore", "Hyderabad"][Math.floor(Math.random() * 4)];
+            
+            // Show toast notification
+            const toast = document.createElement('div');
+            toast.className = 'position-fixed bottom-0 start-0 m-3 alert alert-success';
+            toast.innerHTML = '<i class="fas fa-check-circle me-2"></i> Sample data loaded!';
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+    </script>
+</body>
+</html>

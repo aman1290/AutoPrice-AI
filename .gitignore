@@ -200,3 +200,5 @@ doc.txt/
 
 doc.txt
 artifacts/*
+
+.mlruns/
