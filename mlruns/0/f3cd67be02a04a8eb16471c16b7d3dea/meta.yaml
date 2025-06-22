@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/f3cd67be02a04a8eb16471c16b7d3dea/artifacts
+end_time: 1750619448639
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f3cd67be02a04a8eb16471c16b7d3dea
+run_name: gregarious-toad-500
+run_uuid: f3cd67be02a04a8eb16471c16b7d3dea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750619445651
+status: 3
+tags: []
+user_id: anand

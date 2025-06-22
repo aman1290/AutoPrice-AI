@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/anand/Desktop/reume_projet/AutoPrice-AI/mlruns/0/2cdc9c63667d46d1b17353db53413b47/artifacts
+end_time: 1750619661667
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2cdc9c63667d46d1b17353db53413b47
+run_name: wise-wren-379
+run_uuid: 2cdc9c63667d46d1b17353db53413b47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750619654871
+status: 3
+tags: []
+user_id: anand
