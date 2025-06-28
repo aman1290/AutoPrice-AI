@@ -66,10 +66,10 @@ Accurately predicting used vehicle prices helps dealerships and resellers maximi
 
 
 ## 🐳 Docker & Deployment
-![Docker Deployment Screenshot](artifacts/ss/Screenshot(12).png)
+![Docker Deployment Screenshot](artifacts/ss/docker.png)
 
 ## 🧪 Testing & Experiment Tracking
-![MLflow Screenshot](artifacts/ss/Screenshot(17).png)
+![MLflow Screenshot](artifacts/ss/mlflow.png)
 
 ## 🎯 Usage
 ''' bash
@@ -88,8 +88,8 @@ uvicorn app:app --reload
 
 
 ## 📎 Visuals
-![Demo Screenshot](artifacts/ss/Screenshot(16).png)
-![Demo Screenshot](artifacts/ss/Screenshot(15).png)
+![Demo Screenshot](artifacts/ss/demo.png)
+![Demo Screenshot](artifacts/ss/demo1.png)
 ![logs ss ](artifacts/ss/dockerlogs.png)
 
 ## 📝 Future Improvements
