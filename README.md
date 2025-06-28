@@ -2,9 +2,9 @@
 
 **End-to-End Machine Learning System for Used Vehicle Price Prediction**
 
-[![CI/CD](https://github.com/aman1290/AutoPrice-AI/actions/workflows/main.yml/badge.svg)](https://github.com/aman1290/AutoPrice-AI/actions)
-[![Docker](https://img.shields.io/docker/pulls/aman1290/autoprice-ai)](https://hub.docker.com/r/aman1290/autoprice-ai)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![Docker](https://img.shields.io/badge/docker-✓-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/aman1290/autoprice-ai)
+[![License](https://img.shields.io/badge/license-MIT-8A2BE2)](LICENSE)
 
 ---
 
@@ -41,12 +41,12 @@ Accurately predicting used vehicle prices helps dealerships and resellers maximi
 | **Backend**        | FastAPI, Uvicorn, SQLite                                                    |
 | **Frontend**       | Bootstrap, Jinja2, Chart.js                                                 |
 | **Infrastructure** | Docker, AWS (EC2/ECR/IAM), GitHub Actions                                   |
-| **Monitoring**     | MLflow, SHAP, pytest  
+| **Monitoring**     | MLflow 
 
 ---
 
 ## ⚙ Architecture & Workflow
-graph LR
+
     A[Data Scraping] --> B[Raw Data.zip]
     B --> C[Data Ingestion]
     C --> D[Validation]
@@ -66,10 +66,10 @@ graph LR
 
 
 ## 🐳 Docker & Deployment
-![Docker Deployment Screenshot](artifacts/ss/Screenshot (12).png)
+![Docker Deployment Screenshot](artifacts/ss/Screenshot(12).png)
 
 ## 🧪 Testing & Experiment Tracking
-![MLflow Screenshot](artifacts/ss/Screenshot (17).png)
+![MLflow Screenshot](artifacts/ss/Screenshot(17).png)
 
 ## 🎯 Usage
 ''' bash
@@ -88,8 +88,8 @@ uvicorn app:app --reload
 
 
 ## 📎 Visuals
-![Demo Screenshot](artifacts/ss/Screenshot (16).png)
-![Demo Screenshot](artifacts/ss/Screenshot (15).png)
+![Demo Screenshot](artifacts/ss/Screenshot(16).png)
+![Demo Screenshot](artifacts/ss/Screenshot(15).png)
 ![logs ss ](artifacts/ss/dockerlogs.png)
 
 ## 📝 Future Improvements
